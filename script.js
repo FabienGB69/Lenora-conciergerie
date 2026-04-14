@@ -1,39 +1,85 @@
-// ── Menu mobile ───────────────────────────────────────────────────────────────
-const menuBtn = document.querySelector('.menu-btn');
-const menu = document.querySelector('.menu');
-
-if (menuBtn && menu) {
-  const closeMenu = () => {
-    menu.classList.remove('open');
-    menuBtn.setAttribute('aria-expanded', 'false');
-  };
-
-  menuBtn.addEventListener('click', () => {
-    const isOpen = menu.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded', String(isOpen));
-  });
-
-  // Fermer le menu au clic sur un lien (mobile)
-  menu.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', closeMenu);
-  });
-
-  // Fermer le menu au resize (retour desktop)
-  window.addEventListener('resize', () => {
-    if (window.innerWidth >= 768) closeMenu();
-  });
-
-  // Fermer le menu avec la touche Echap
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeMenu();
+/* ── Nav scroll behaviour ─────────────────────── */
+const nav = document.getElementById('mainNav');
+if (nav) {
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
   });
 }
 
-// ── Année courante ─────────────────────────────────────────────────────────────
+/* ── Hamburger / mobile menu ──────────────────── */
+const hamburger = document.getElementById('navHamburger');
+const mobileOverlay = document.getElementById('mobileOverlay');
+
+if (hamburger && mobileOverlay) {
+  hamburger.addEventListener('click', () => {
+    const isOpen = hamburger.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+    if (isOpen) {
+      mobileOverlay.style.display = 'flex';
+      requestAnimationFrame(() => mobileOverlay.classList.add('open'));
+      document.body.style.overflow = 'hidden';
+    } else {
+      closeMobile();
+    }
+  });
+}
+
+function closeMobile() {
+  if (!hamburger || !mobileOverlay) return;
+  hamburger.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
+  mobileOverlay.classList.remove('open');
+  document.body.style.overflow = '';
+  setTimeout(() => {
+    if (!mobileOverlay.classList.contains('open')) {
+      mobileOverlay.style.display = '';
+    }
+  }, 380);
+}
+
+function toggleMobileSub(e, id) {
+  e.preventDefault();
+  const sub = document.getElementById(id);
+  const chevId = id.replace('sub-', 'chev-');
+  const chev = document.getElementById(chevId);
+  if (!sub) return;
+  const isOpen = sub.classList.toggle('open');
+  if (chev) chev.classList.toggle('open', isOpen);
+}
+
+/* ── ESC closes mobile menu ───────────────────── */
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeMobile();
+});
+
+/* ── Année courante ───────────────────────────── */
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
 
-// ── Formulaire de contact (AJAX Formspree) ─────────────────────────────────────
+/* ── Scroll reveal (IntersectionObserver) ─────── */
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
+);
+
+document.querySelectorAll(
+  '.service-card, .testimonial-card, .process-step, .stat-item, .zone-card, .tarif-card, .blog-card, .about-content, .about-image-col'
+).forEach((el, i) => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(24px)';
+  el.style.transition = `opacity 0.6s ${i * 0.06}s ease, transform 0.6s ${i * 0.06}s ease`;
+  revealObserver.observe(el);
+});
+
+/* ── Contact form — AJAX Formspree ────────────── */
 const form = document.getElementById('contact-form');
 const formSuccess = document.getElementById('form-success');
 
@@ -42,11 +88,11 @@ if (form) {
     e.preventDefault();
 
     const submitBtn = form.querySelector('[type="submit"]');
-    const originalText = submitBtn.textContent;
+    const originalHTML = submitBtn.innerHTML;
 
-    // État de chargement
-    submitBtn.textContent = 'Envoi en cours…';
+    submitBtn.innerHTML = 'Envoi en cours…';
     submitBtn.disabled = true;
+    submitBtn.style.opacity = '0.7';
 
     try {
       const response = await fetch(form.action, {
@@ -56,21 +102,22 @@ if (form) {
       });
 
       if (response.ok) {
-        // Succès : masquer le formulaire, afficher le message de confirmation
         form.hidden = true;
         if (formSuccess) {
           formSuccess.hidden = false;
+          formSuccess.setAttribute('tabindex', '-1');
           formSuccess.focus();
         }
       } else {
-        throw new Error('Erreur serveur');
+        const data = await response.json().catch(() => ({}));
+        throw new Error(data.error || 'Erreur serveur');
       }
-    } catch {
-      // Erreur : restaurer le bouton et informer l'utilisateur
-      submitBtn.textContent = originalText;
+    } catch (err) {
+      submitBtn.innerHTML = originalHTML;
       submitBtn.disabled = false;
+      submitBtn.style.opacity = '';
       alert(
-        'Une erreur est survenue lors de l\'envoi. Merci de réessayer ou de nous contacter directement par téléphone.'
+        "Une erreur est survenue lors de l'envoi. Merci de réessayer ou de nous contacter directement au 06 74 39 87 41."
       );
     }
   });

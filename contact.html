@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO ─────────────────────────────────────────────────────────────── -->
-    <title>Estimation Gratuite | Lenora Conciergerie à [Ville]</title>
-    <meta name="description" content="Obtenez une estimation gratuite pour la gestion de votre location saisonnière à [Ville]. Réponse sous 24h ouvrées. Confiez votre bien à Lenora Conciergerie." />
+    <title>Audit Gratuit | Lenora Conciergerie — Ain, Nord Isère, Est Lyonnais</title>
+    <meta name="description" content="Demandez votre audit gratuit à Lenora Conciergerie. Estimation personnalisée de vos revenus locatifs dans l'Ain, Nord Isère et Est Lyonnais. Réponse sous 24h." />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://[votre-domaine].fr/contact.html" />
+    <link rel="canonical" href="https://lenora-conciergerie.fr/contact.html" />
 
     <!-- Open Graph ──────────────────────────────────────────────────────── -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Estimation Gratuite | Lenora Conciergerie" />
-    <meta property="og:description" content="Obtenez une estimation personnalisée pour la gestion de votre bien. Réponse sous 24h." />
-    <meta property="og:url" content="https://[votre-domaine].fr/contact.html" />
-    <meta property="og:image" content="https://[votre-domaine].fr/images/og-contact.jpg" />
+    <meta property="og:title" content="Audit Gratuit | Lenora Conciergerie — Ain, Nord Isère, Est Lyonnais" />
+    <meta property="og:description" content="Demandez votre audit gratuit à Lenora Conciergerie. Estimation personnalisée de vos revenus locatifs dans l'Ain, Nord Isère et Est Lyonnais. Réponse sous 24h." />
+    <meta property="og:url" content="https://lenora-conciergerie.fr/contact.html" />
+    <meta property="og:image" content="https://lenora-conciergerie.fr/images/og-contact.jpg" />
     <meta property="og:locale" content="fr_FR" />
 
     <!-- Favicon ─────────────────────────────────────────────────────────── -->
@@ -25,141 +25,238 @@
     <!-- Fonts ───────────────────────────────────────────────────────────── -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <nav class="nav container">
-        <a href="index.html" class="brand">Lenora Conciergerie</a>
-        <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
-        <ul id="menu" class="menu">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="methode.html">Méthode</a></li>
-          <li><a class="active" href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main class="container section">
-      <h1 class="page-title">Obtenez votre estimation gratuite</h1>
-      <p class="intro">
-        Partagez les informations sur votre bien et nous revenons vers vous sous 24h ouvrées
-        avec une estimation personnalisée, sans engagement.
-      </p>
+    <!-- ── Navigation ───────────────────────────────────────────────────── -->
+    <nav id="mainNav">
+      <a href="index.html" class="nav-logo">Lenora Conciergerie</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html#about">À propos</a></li>
+        <li>
+          <a href="services.html">Mes services <span class="nav-arrow">▾</span></a>
+          <div class="nav-dropdown">
+            <div class="drop-section">Prestations</div>
+            <a href="services.html">Gestion complète</a>
+            <a href="services.html#mise-en-service">Mise en service</a>
+            <a href="services.html">Optimisation d'annonce</a>
+            <div class="drop-sep"></div>
+            <a href="index.html#tarifs">Voir les tarifs →</a>
+          </div>
+        </li>
+        <li>
+          <a href="index.html#zones">Zones <span class="nav-arrow">▾</span></a>
+          <div class="nav-dropdown">
+            <div class="drop-section">Pages locales SEO</div>
+            <a href="#">Conciergerie dans l'Ain</a>
+            <a href="#">Conciergerie Nord Isère</a>
+            <a href="#">Conciergerie Est Lyonnais</a>
+          </div>
+        </li>
+        <li><a href="index.html#tarifs">Tarifs</a></li>
+        <li><a href="index.html#blog">Blog</a></li>
+        <li><a href="contact.html" class="nav-cta">Audit gratuit</a></li>
+      </ul>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
 
-      <!-- Message de succès — affiché après envoi réussi du formulaire -->
-      <div class="form-success" id="form-success" role="alert" aria-live="polite" hidden>
-        <p>
-          Merci ! Votre demande a bien été envoyée.<br />
-          Nous vous répondrons sous 24h ouvrées avec votre estimation.
-        </p>
+    <!-- ── Mobile overlay ───────────────────────────────────────────────── -->
+    <div class="nav-mobile-overlay" id="mobileOverlay">
+      <ul class="nav-mobile-links">
+        <li><a href="index.html" onclick="closeMobile()">Accueil</a></li>
+        <li><a href="index.html#about" onclick="closeMobile()">À propos</a></li>
+        <li>
+          <a href="services.html" onclick="toggleMobileSub(event,'sub-services')">
+            Mes services <span class="mobile-chevron" id="chev-services">&#9662;</span>
+          </a>
+          <div class="mobile-sub" id="sub-services">
+            <a href="services.html" onclick="closeMobile()">Gestion complète</a>
+            <a href="services.html#mise-en-service" onclick="closeMobile()">Mise en service</a>
+            <a href="services.html" onclick="closeMobile()">Optimisation d'annonce</a>
+            <a href="index.html#tarifs" onclick="closeMobile()">Voir les tarifs</a>
+          </div>
+        </li>
+        <li>
+          <a href="index.html#zones" onclick="toggleMobileSub(event,'sub-zones')">
+            Zones <span class="mobile-chevron" id="chev-zones">&#9662;</span>
+          </a>
+          <div class="mobile-sub" id="sub-zones">
+            <a href="#" onclick="closeMobile()">Conciergerie dans l'Ain</a>
+            <a href="#" onclick="closeMobile()">Conciergerie Nord Isère</a>
+            <a href="#" onclick="closeMobile()">Conciergerie Est Lyonnais</a>
+          </div>
+        </li>
+        <li><a href="index.html#tarifs" onclick="closeMobile()">Tarifs</a></li>
+        <li><a href="index.html#blog" onclick="closeMobile()">Blog</a></li>
+      </ul>
+      <a href="contact.html" class="nav-mobile-cta" onclick="closeMobile()">
+        Audit gratuit
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <!-- ── Page hero ────────────────────────────────────────────────────── -->
+    <div class="page-hero">
+      <div class="page-hero-content">
+        <p class="hero-eyebrow">Sans engagement · Réponse sous 24h</p>
+        <h1>Votre rentabilité<br><em>commence ici.</em></h1>
+        <p>Je réalise un audit complet de votre bien et vous fais parvenir une estimation personnalisée de vos revenus locatifs potentiels — entièrement gratuit.</p>
       </div>
+    </div>
 
-      <form
-        class="contact-form"
-        id="contact-form"
-        action="https://formspree.io/f/YOUR_FORM_ID"
-        method="post"
-        novalidate
-      >
-        <!-- TODO: remplacer YOUR_FORM_ID par votre identifiant Formspree réel -->
+    <!-- ── Contact section ──────────────────────────────────────────────── -->
+    <main>
+      <div class="contact-section">
+        <div class="contact-inner">
 
-        <!-- Honeypot anti-spam (caché pour les humains, rempli par les bots) -->
-        <input
-          type="text"
-          name="_gotcha"
-          tabindex="-1"
-          autocomplete="off"
-          aria-hidden="true"
-          style="display:none"
-        />
+          <!-- Left: text + features -->
+          <div class="contact-text">
+            <p class="section-label">Audit gratuit</p>
+            <h2 class="serif">Ce que vous obtenez<br><em>avec votre audit</em></h2>
+            <p>Je commence par une analyse approfondie de votre logement, du marché local et du potentiel de votre zone. Vous repartez avec des données concrètes et une stratégie personnalisée.</p>
+            <div class="contact-features">
+              <div class="contact-feature"><div class="contact-feature-dot"></div>Analyse du potentiel locatif de votre bien</div>
+              <div class="contact-feature"><div class="contact-feature-dot"></div>Estimation réaliste des revenus mensuels</div>
+              <div class="contact-feature"><div class="contact-feature-dot"></div>Recommandations personnalisées et actionnables</div>
+              <div class="contact-feature"><div class="contact-feature-dot"></div>Réponse personnelle de Leslye, pas un bot</div>
+              <div class="contact-feature"><div class="contact-feature-dot"></div>Aucun engagement avant votre décision</div>
+            </div>
+            <!-- Contact info block -->
+            <div class="contact-info-block" style="margin-top:40px;">
+              <div class="contact-feature">
+                <div class="contact-feature-dot"></div>
+                <span><strong style="color:var(--copper-light)">Téléphone :</strong> <a href="tel:0674398741" style="color:rgba(255,255,255,0.6);text-decoration:none;">06 74 39 87 41</a></span>
+              </div>
+              <div class="contact-feature">
+                <div class="contact-feature-dot"></div>
+                <span><strong style="color:var(--copper-light)">Email :</strong> <a href="mailto:contact@lenora-conciergerie.fr" style="color:rgba(255,255,255,0.6);text-decoration:none;">contact@lenora-conciergerie.fr</a></span>
+              </div>
+              <div class="contact-feature">
+                <div class="contact-feature-dot"></div>
+                <span><strong style="color:var(--copper-light)">Zone :</strong> <span style="color:rgba(255,255,255,0.6)">Ain · Nord Isère · Est Lyonnais</span></span>
+              </div>
+            </div>
+          </div>
 
-        <div class="form-group">
-          <label for="name">
-            Nom complet <span class="required" aria-hidden="true">*</span>
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            autocomplete="name"
-            aria-required="true"
-          />
+          <!-- Right: form -->
+          <div class="contact-form">
+            <h3>Parlez-moi de votre bien</h3>
+            <!-- Success message -->
+            <div id="form-success" class="form-success" hidden>
+              <p>Merci ! Votre demande a bien été envoyée. Je vous répondrai sous 24h avec votre estimation personnalisée.</p>
+            </div>
+            <!-- Formspree form — TODO: remplacer YOUR_FORM_ID par votre ID Formspree réel -->
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="post" novalidate>
+              <!-- Honeypot anti-spam -->
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true" />
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="prenom">Prénom</label>
+                  <input type="text" id="prenom" name="prenom" class="form-input" placeholder="Marie" required autocomplete="given-name" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="nom">Nom</label>
+                  <input type="text" id="nom" name="nom" class="form-input" placeholder="Dupont" required autocomplete="family-name" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="marie@exemple.fr" required autocomplete="email" />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="tel">Téléphone</label>
+                  <input type="tel" id="tel" name="tel" class="form-input" placeholder="06 xx xx xx xx" autocomplete="tel" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="type-bien">Type de bien</label>
+                  <select id="type-bien" name="type-bien" class="form-input form-select">
+                    <option value="">Sélectionner</option>
+                    <option>Studio</option>
+                    <option>T2</option>
+                    <option>T3</option>
+                    <option>T4 ou plus</option>
+                    <option>Maison</option>
+                    <option>Gîte / Chalet</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="ville">Ville du bien</label>
+                <input type="text" id="ville" name="ville" class="form-input" placeholder="Ex: Ambérieu-en-Bugey, Bourgoin-Jallieu…" required autocomplete="address-level2" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Votre message</label>
+                <textarea id="message" name="message" class="form-input" rows="4" placeholder="Parlez-moi de votre bien et de vos attentes…" style="resize:vertical;"></textarea>
+              </div>
+              <button type="submit" class="btn-form">
+                Envoyer ma demande d'audit
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z"/></svg>
+              </button>
+            </form>
+          </div>
+
         </div>
-
-        <div class="form-group">
-          <label for="email">
-            Adresse e-mail <span class="required" aria-hidden="true">*</span>
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            autocomplete="email"
-            aria-required="true"
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="phone">
-            Téléphone <span class="label-hint">(optionnel)</span>
-          </label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            autocomplete="tel"
-            placeholder="06 XX XX XX XX"
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="city">
-            Ville du bien <span class="required" aria-hidden="true">*</span>
-          </label>
-          <input
-            type="text"
-            id="city"
-            name="city"
-            required
-            autocomplete="address-level2"
-            aria-required="true"
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="message">
-            Votre message <span class="required" aria-hidden="true">*</span>
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            required
-            aria-required="true"
-            placeholder="Décrivez votre bien : type, superficie, disponibilités…"
-          ></textarea>
-        </div>
-
-        <button class="btn btn-primary btn-submit" type="submit">
-          Obtenir mon estimation gratuite
-        </button>
-      </form>
+      </div>
     </main>
 
-    <footer class="footer">
-      <div class="container footer-content">
-        <p><strong>Lenora Conciergerie</strong> — [Adresse], [Ville], France</p>
-        <p>
-          <a href="tel:[+33XXXXXXXXX]">[+33 X XX XX XX XX]</a> ·
-          <a href="mailto:[contact@lenora-conciergerie.fr]">[contact@lenora-conciergerie.fr]</a>
-        </p>
-        <p>© <span id="year"></span> Lenora Conciergerie.</p>
+    <!-- ── Footer ────────────────────────────────────────────────────────── -->
+    <footer>
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="footer-logo">Lenora Conciergerie</a>
+          <p class="footer-tagline">Reprenez le contrôle de votre temps. Je transforme votre bien en expérience inoubliable pour vous et vos voyageurs.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/1DVts78FRo/" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/lenora.conciergerie" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#about">À propos</a></li>
+            <li><a href="services.html">Mes services</a></li>
+            <li><a href="index.html#tarifs">Tarifs</a></li>
+            <li><a href="index.html#avis">Témoignages</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Mes services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Gestion complète</a></li>
+            <li><a href="services.html#mise-en-service">Mise en service</a></li>
+            <li><a href="services.html">Optimisation d'annonce</a></li>
+            <li><a href="#">Conciergerie dans l'Ain</a></li>
+            <li><a href="#">Conciergerie Nord Isère</a></li>
+            <li><a href="#">Conciergerie Est Lyonnais</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Me contacter</h4>
+          <div class="footer-contact">
+            <div class="footer-contact-item"><strong>Téléphone</strong><a href="tel:0674398741">06 74 39 87 41</a></div>
+            <div class="footer-contact-item"><strong>Email</strong><a href="mailto:contact@lenora-conciergerie.fr">contact@lenora-conciergerie.fr</a></div>
+            <div class="footer-contact-item"><strong>Basée à</strong>Jujurieux — Ain (01)</div>
+            <div class="footer-contact-item"><strong>Zone</strong>Ain · Nord Isère · Est Lyonnais</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Lenora Conciergerie — Tous droits réservés</span>
+        <div class="footer-legal">
+          <a href="#">Mentions légales</a>
+          <a href="#">Confidentialité</a>
+          <a href="#">CGV</a>
+        </div>
       </div>
     </footer>
 

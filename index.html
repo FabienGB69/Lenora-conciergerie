@@ -1,126 +1,645 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lenora Conciergerie | Gestion Locative Courte Durée — Ain, Nord Isère, Est Lyonnais</title>
+  <meta name="description" content="Conciergerie spécialisée en location courte durée dans l'Ain, le Nord Isère et l'Est Lyonnais. Je gère votre bien de A à Z : annonce, accueil voyageurs, ménage, maintenance. Audit gratuit." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://lenora-conciergerie.fr/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lenora Conciergerie | Gestion Locative — Ain, Nord Isère, Est Lyonnais" />
+  <meta property="og:description" content="Conciergerie haut de gamme pour votre location saisonnière. De l'annonce au check-out, je m'occupe de tout." />
+  <meta property="og:url" content="https://lenora-conciergerie.fr/" />
+  <meta property="og:image" content="https://lenora-conciergerie.fr/images/og-accueil.jpg" />
+  <meta property="og:locale" content="fr_FR" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Lenora Conciergerie",
+    "description": "Conciergerie spécialisée en gestion de locations saisonnières dans l'Ain, le Nord Isère et l'Est Lyonnais.",
+    "url": "https://lenora-conciergerie.fr",
+    "telephone": "0674398741",
+    "email": "contact@lenora-conciergerie.fr",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jujurieux",
+      "addressRegion": "Ain",
+      "addressCountry": "FR"
+    },
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Ain" },
+      { "@type": "AdministrativeArea", "name": "Nord Isère" },
+      { "@type": "AdministrativeArea", "name": "Est Lyonnais" }
+    ],
+    "serviceType": "Conciergerie location saisonnière",
+    "founder": { "@type": "Person", "name": "Leslye" },
+    "sameAs": [
+      "https://www.facebook.com/share/1DVts78FRo/",
+      "https://www.instagram.com/lenora.conciergerie"
+    ]
+  }
+  </script>
+</head>
+<body>
 
-    <!-- SEO ─────────────────────────────────────────────────────────────── -->
-    <!-- TODO: remplacer [Ville] par votre ville (ex: Lyon, Grenoble) -->
-    <title>Lenora Conciergerie | Gestion Locative Courte Durée à [Ville]</title>
-    <meta name="description" content="Lenora Conciergerie gère votre location saisonnière à [Ville] : accueil voyageurs, ménage hôtelier, maintenance et tarification dynamique. Maximisez vos revenus sans contrainte. Estimation gratuite." />
-    <meta name="robots" content="index, follow" />
-    <!-- TODO: remplacer [votre-domaine] -->
-    <link rel="canonical" href="https://[votre-domaine].fr/" />
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">Lenora Conciergerie</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Accueil</a></li>
+    <li><a href="#about">À propos</a></li>
+    <li>
+      <a href="services.html">Mes services <span class="nav-arrow">&#9662;</span></a>
+      <div class="nav-dropdown">
+        <div class="drop-section">Prestations</div>
+        <a href="services.html">Gestion complète</a>
+        <a href="services.html#mise-en-service">Mise en service</a>
+        <a href="services.html">Optimisation d'annonce</a>
+        <div class="drop-sep"></div>
+        <a href="#tarifs">Voir les tarifs &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <a href="#zones">Zones <span class="nav-arrow">&#9662;</span></a>
+      <div class="nav-dropdown">
+        <div class="drop-section">Pages locales SEO</div>
+        <a href="#">Conciergerie dans l'Ain</a>
+        <a href="#">Conciergerie Nord Isère</a>
+        <a href="#">Conciergerie Est Lyonnais</a>
+      </div>
+    </li>
+    <li><a href="#tarifs">Tarifs</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="contact.html" class="nav-cta">Audit gratuit</a></li>
+  </ul>
+  <button class="nav-hamburger" id="navHamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-    <!-- Open Graph ──────────────────────────────────────────────────────── -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Lenora Conciergerie | Gestion Locative à [Ville]" />
-    <meta property="og:description" content="Confiez votre location saisonnière à Lenora. Gestion complète, revenus optimisés, sérénité totale." />
-    <meta property="og:url" content="https://[votre-domaine].fr/" />
-    <meta property="og:image" content="https://[votre-domaine].fr/images/og-accueil.jpg" />
-    <meta property="og:locale" content="fr_FR" />
+<div class="nav-mobile-overlay" id="mobileOverlay">
+  <ul class="nav-mobile-links">
+    <li><a href="index.html" onclick="closeMobile()">Accueil</a></li>
+    <li><a href="#about" onclick="closeMobile()">À propos</a></li>
+    <li>
+      <a href="services.html" onclick="toggleMobileSub(event,'sub-services')">
+        Mes services <span class="mobile-chevron" id="chev-services">&#9662;</span>
+      </a>
+      <div class="mobile-sub" id="sub-services">
+        <a href="services.html" onclick="closeMobile()">Gestion complète</a>
+        <a href="services.html#mise-en-service" onclick="closeMobile()">Mise en service</a>
+        <a href="services.html" onclick="closeMobile()">Optimisation d'annonce</a>
+        <a href="#tarifs" onclick="closeMobile()">Voir les tarifs</a>
+      </div>
+    </li>
+    <li>
+      <a href="#zones" onclick="toggleMobileSub(event,'sub-zones')">
+        Zones <span class="mobile-chevron" id="chev-zones">&#9662;</span>
+      </a>
+      <div class="mobile-sub" id="sub-zones">
+        <a href="#" onclick="closeMobile()">Conciergerie dans l'Ain</a>
+        <a href="#" onclick="closeMobile()">Conciergerie Nord Isère</a>
+        <a href="#" onclick="closeMobile()">Conciergerie Est Lyonnais</a>
+      </div>
+    </li>
+    <li><a href="#tarifs" onclick="closeMobile()">Tarifs</a></li>
+    <li><a href="#blog" onclick="closeMobile()">Blog</a></li>
+  </ul>
+  <a href="contact.html" class="nav-mobile-cta" onclick="closeMobile()">
+    Audit gratuit
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </a>
+</div>
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-image-block">
+    <div class="hero-img-ph">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1">
+        <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+        <path d="m21 15-5-5L5 21"/>
+      </svg>
+      <p>Photo professionnelle d'un bien géré</p>
+      <small>&#9888; Remplacer par une photo réelle</small>
+    </div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Conciergerie locative · Ain &amp; Isère</p>
+    <h1>Faites de votre bien<br>une <em>expérience inoubliable.</em><br><strong>Sans sacrifier votre temps</strong><br>ou votre charge mentale.</h1>
+    <p class="hero-sub">Je m'occupe de tout — annonce, réservations, accueil des voyageurs, ménage, maintenance. Vous profitez de vos revenus, sans la contrainte du quotidien.</p>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn-primary">
+        Demander mon audit gratuit
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#about" class="btn-ghost">Découvrir mon histoire</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="scroll-line"></div>Défiler</div>
+</section>
 
-    <!-- Favicon ─────────────────────────────────────────────────────────── -->
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
-    <!-- Fonts ───────────────────────────────────────────────────────────── -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-
-    <link rel="stylesheet" href="styles.css" />
-
-    <!-- Schema.org LocalBusiness ────────────────────────────────────────── -->
-    <!-- TODO: remplir toutes les valeurs entre crochets -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Lenora Conciergerie",
-      "url": "https://[votre-domaine].fr",
-      "description": "Conciergerie haut de gamme spécialisée dans la gestion locative courte durée à [Ville].",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "[Ville]",
-        "addressRegion": "[Région]",
-        "postalCode": "[Code Postal]",
-        "addressCountry": "FR"
-      },
-      "telephone": "[+33XXXXXXXXX]",
-      "email": "[contact@lenora-conciergerie.fr]",
-      "openingHours": "Mo-Su 08:00-20:00",
-      "areaServed": "[Ville]",
-      "priceRange": "€€",
-      "sameAs": [
-        "https://www.airbnb.fr/users/[id]",
-        "https://www.booking.com/[profil]"
-      ]
-    }
-    </script>
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="nav container">
-        <a href="index.html" class="brand">Lenora Conciergerie</a>
-        <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
-        <ul id="menu" class="menu">
-          <li><a class="active" href="index.html">Accueil</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="methode.html">Méthode</a></li>
-          <li><a href="contact.html">Contact</a></li>
+<div class="stats-strip">
+  <div class="stat-item">
+    <div class="stat-num">100<sup>%</sup></div>
+    <div class="stat-label">Dédié à votre logement</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">3</div>
+    <div class="stat-label">Zones géographiques couvertes</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">4</div>
+    <div class="stat-label">Avis 5 étoiles vérifiés</div>
+  </div>
+</div>
+<section class="about" id="about">
+  <div class="about-image-col">
+    <div class="about-label-block">Leslye — Fondatrice</div>
+    <div class="about-portrait">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1">
+        <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+      </svg>
+      <p>Portrait professionnel de Leslye</p>
+      <small>&#9888; Remplacer la photo par un vrai portrait</small>
+    </div>
+    <div class="about-badge">
+      <div class="about-badge-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <div class="about-badge-label">Recommandée<br>par ses clients</div>
+    </div>
+  </div>
+  <div class="about-content">
+    <p class="section-label">À propos</p>
+    <h2 class="serif">Derrière Lenora,<br><em>Leslye vous accompagne</em></h2>
+    <p class="about-intro">« J'ai construit cette conciergerie avec les mêmes valeurs qui ont guidé toute ma vie professionnelle : l'écoute, la rigueur et l'attention sincère aux personnes. »</p>
+    <p class="about-body">Après plusieurs années à accompagner des familles en tant qu'assistante maternelle, j'ai décidé de mettre mon sens de l'organisation et ma bienveillance au service d'un nouveau projet — la gestion de locations saisonnières.</p>
+    <div class="about-name-story">
+      <p>J'ai choisi de nommer ma conciergerie <strong>d'après le prénom de ma fille, Lenora</strong>. Ce nom, c'est un engagement personnel : je gère votre bien avec le même soin et la même tendresse que je lui porte chaque jour. Ce n'est pas juste un service — c'est une promesse.</p>
+    </div>
+    <p class="about-body">Basée à Jujurieux dans l'Ain, j'interviens dans un périmètre soigneusement délimité pour garantir la réactivité et la proximité que vous méritez vraiment.</p>
+    <div class="about-formation">
+      <div class="formation-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+        </svg>
+      </div>
+      <div class="formation-text">
+        <strong>Formation certifiée — Alice Roda, experte reconnue en location saisonnière</strong>
+        Une expertise construite sérieusement, auprès d'une référence du secteur, pour vous offrir des stratégies concrètes et éprouvées adaptées au potentiel réel de votre bien.
+      </div>
+    </div>
+  </div>
+</section>
+<section class="services" id="services">
+  <div class="services-header">
+    <div>
+      <p class="section-label">Mes services</p>
+      <h2 class="serif">Une gestion complète,<br><em>de A à Z</em></h2>
+    </div>
+    <p class="services-sub">Une seule offre structurée pour tout gérer — de la mise en ligne de votre annonce jusqu'à la remise en état impeccable après chaque séjour.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <div class="service-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      </div>
+      <h3>Présence en ligne</h3>
+      <p class="service-sub-label">Faire la différence</p>
+      <ul class="service-list">
+        <li>Audit complet de votre logement</li>
+        <li>Optimisation et mise à jour de votre annonce</li>
+        <li>Tarification dynamique intelligente</li>
+        <li>Gestion du calendrier et des réservations</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <div class="service-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </div>
+      <h3>Accueil voyageurs</h3>
+      <p class="service-sub-label">Créer l'expérience</p>
+      <ul class="service-list">
+        <li>Gestion des arrivées et départs</li>
+        <li>Communication continue avec les voyageurs</li>
+        <li>Assistance pendant le séjour</li>
+        <li>Kit de bienvenue personnalisé</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <div class="service-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+      </div>
+      <h3>Intendance du bien</h3>
+      <p class="service-sub-label">Préserver la qualité</p>
+      <ul class="service-list">
+        <li>Ménage et blanchisserie professionnelle</li>
+        <li>Suivi et maintenance du logement</li>
+        <li>Guide de bienvenue et consommables</li>
+        <li>Contrôle qualité après chaque séjour</li>
+      </ul>
+    </div>
+    <div class="service-card service-card-wide" id="mise-en-service">
+      <div>
+        <div class="service-num">04</div>
+        <div class="service-icon" style="background:rgba(255,255,255,0.1);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+        </div>
+        <h3>Mise en service</h3>
+        <p class="service-sub-label">Démarrez au sommet</p>
+        <ul class="service-list">
+          <li>Séance photo professionnelle</li>
+          <li>Ménage complet de lancement</li>
+          <li>Stratégie de positionnement tarifaire</li>
         </ul>
-      </nav>
-    </header>
+      </div>
+      <div class="wide-right">
+        <strong>Fortement recommandée pour un démarrage optimal</strong>
+        Cette prestation garantit un taux de réservation élevé dès les premières semaines. Des photos de qualité et un logement impeccable sont les deux leviers les plus directs sur votre attractivité en ligne. Tarif sur devis.
+      </div>
+    </div>
+  </div>
+</section>
+<section class="process" id="process">
+  <div class="process-header">
+    <p class="section-label">Mon processus</p>
+    <h2 class="serif">Un accompagnement<br><em>à chaque étape</em></h2>
+    <p>De la préparation du logement à la remise en état post-séjour, je prends en charge l'intégralité du cycle locatif.</p>
+  </div>
+  <div class="process-steps">
+    <div class="process-step">
+      <div class="step-circle">
+        <span class="step-num">1</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#283828" stroke-width="1.5"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+      </div>
+      <h4>Avant la mise en location</h4>
+      <p>Je prépare votre logement et construis une expérience voyageur pensée dans les moindres détails.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-circle">
+        <span class="step-num">2</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#283828" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      </div>
+      <h4>En ligne</h4>
+      <p>Annonce optimisée, tarification dynamique et visibilité maximisée sur Airbnb, Booking et les autres plateformes clés.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-circle">
+        <span class="step-num">3</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#283828" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </div>
+      <h4>Pendant le séjour</h4>
+      <p>J'accueille vos voyageurs chaleureusement et reste disponible pour toute assistance durant leur séjour.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-circle">
+        <span class="step-num">4</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#283828" stroke-width="1.5"><polyline points="9,11 12,14 22,4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      </div>
+      <h4>Après le séjour</h4>
+      <p>Contrôle qualité, nettoyage professionnel et remise en état impeccable — prêt pour le prochain voyageur.</p>
+    </div>
+  </div>
+</section>
 
-    <main>
-      <section class="hero-page">
-        <div class="container hero-content">
-          <!-- TODO: personnaliser avec votre ville -->
-          <p class="pill">Conciergerie haut de gamme à [Ville]</p>
-          <h1>Confiez votre location saisonnière à une équipe qui vise l'excellence.</h1>
-          <p>
-            De l'annonce au check-out, Lenora prend en charge la gestion complète de votre bien
-            à [Ville] pour optimiser vos revenus et améliorer l'expérience voyageur.
-          </p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="contact.html">Demander une estimation gratuite</a>
-            <a class="btn btn-secondary" href="services.html">Voir nos services</a>
+<section class="zones" id="zones">
+  <div class="zones-header">
+    <div>
+      <p class="section-label">Zones d'intervention</p>
+      <h2 class="serif">J'interviens là<br><em>où se trouve votre bien</em></h2>
+      <p class="zones-intro">Basée à Jujurieux, j'ai choisi de limiter ma zone d'intervention pour maintenir une vraie réactivité. Chaque propriétaire mérite une présence de proximité, pas une gestion à distance.</p>
+    </div>
+  </div>
+  <div class="zones-grid">
+    <div class="zone-card">
+      <div class="zone-dept">01</div>
+      <div class="zone-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <h3>L'Ain</h3>
+      <div class="zone-cities">
+        <span class="zone-city">Jujurieux</span>
+        <span class="zone-city">Ambérieu-en-Bugey</span>
+        <span class="zone-city">Meximieux</span>
+        <span class="zone-city">Bourg-en-Bresse</span>
+        <span class="zone-city">Pérouges</span>
+      </div>
+      <p class="zone-seo-note">Je gère des locations saisonnières dans tout le département de l'Ain, de la Dombes aux contreforts du Jura.</p>
+      <a href="#" class="zone-link">Voir la page Ain <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="zone-card">
+      <div class="zone-dept">38</div>
+      <div class="zone-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <h3>Nord Isère</h3>
+      <div class="zone-cities">
+        <span class="zone-city">Bourgoin-Jallieu</span>
+        <span class="zone-city">La Tour-du-Pin</span>
+        <span class="zone-city">Morestel</span>
+        <span class="zone-city">Crémieu</span>
+      </div>
+      <p class="zone-seo-note">Le Nord Isère offre un marché locatif dynamique grâce à sa proximité avec Lyon et ses axes logistiques en plein développement.</p>
+      <a href="#" class="zone-link">Voir la page Nord Isère <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="zone-card">
+      <div class="zone-dept">69</div>
+      <div class="zone-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <h3>Est Lyonnais</h3>
+      <div class="zone-cities">
+        <span class="zone-city">Meyzieu</span>
+        <span class="zone-city">Décines</span>
+        <span class="zone-city">Pusignan</span>
+        <span class="zone-city">Jonage</span>
+        <span class="zone-city">Genas</span>
+      </div>
+      <p class="zone-seo-note">L'Est Lyonnais attire les voyageurs d'affaires et les touristes de passage grâce à la proximité de l'aéroport Saint-Exupéry.</p>
+      <a href="#" class="zone-link">Voir la page Est Lyonnais <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+<section class="testimonials" id="avis">
+  <div class="testimonials-header">
+    <p class="section-label">Témoignages</p>
+    <h2 class="serif">Ils ont retrouvé le plaisir<br><em>d'être propriétaire</em></h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card featured">
+      <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+      <span class="quote-mark">"</span>
+      <p class="testimonial-text">Personne très sérieuse et investie dans son travail. Vous pouvez sincèrement faire confiance à Leslye. Elle saura vous satisfaire dans vos démarches et dans la gestion de vos logements. Un vrai soulagement de ne plus gérer tout ça seul.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">N</div>
+        <div>
+          <div class="testimonial-name">Nathalie B.</div>
+          <div class="testimonial-role">Propriétaire d'un T3 · Ambérieu-en-Bugey, Ain</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+      <span class="quote-mark">"</span>
+      <p class="testimonial-text">Leslye est avenante, chaleureuse et bienveillante. On se sent immédiatement en confiance. Je lui confierais les yeux fermés la gestion de n'importe quel bien.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">J</div>
+        <div>
+          <div class="testimonial-name">Johanna R.</div>
+          <div class="testimonial-role">Propriétaire · Est Lyonnais</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+      <span class="quote-mark">"</span>
+      <p class="testimonial-text">Personne impliquée dans son travail, consciencieuse et très agréable. Je recommande sans la moindre hésitation, sincèrement.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">J</div>
+        <div>
+          <div class="testimonial-name">Juliette M.</div>
+          <div class="testimonial-role">Propriétaire d'une maison · Nord Isère</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+      <span class="quote-mark">"</span>
+      <p class="testimonial-text">Sérieuse, agréable, aimable et à l'écoute. Je n'aurais jamais pu gérer mes locations aussi sereinement sans elle. Une vraie professionnelle.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">M</div>
+        <div>
+          <div class="testimonial-name">Marylin D.</div>
+          <div class="testimonial-role">Propriétaire d'un T2 · Jujurieux, Ain</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tarifs" id="tarifs">
+  <div class="tarifs-header">
+    <p class="section-label">Tarifs</p>
+    <h2 class="serif">Une tarification<br><em>claire et transparente</em></h2>
+    <p>Je travaille à la commission sur les revenus générés : mes intérêts sont directement alignés avec les vôtres. Plus votre bien performe, mieux je travaille.</p>
+  </div>
+  <div class="tarifs-grid">
+    <div class="tarif-card">
+      <div class="tarif-name">Gestion en ligne</div>
+      <h3>Visibilité &amp; Optimisation</h3>
+      <div class="tarif-price"><span>à partir de</span>8<small> % des revenus</small></div>
+      <p class="tarif-desc">Idéal pour les propriétaires qui gèrent eux-mêmes les séjours mais souhaitent maximiser leur visibilité et leurs revenus sur les plateformes.</p>
+      <ul class="tarif-list">
+        <li>Audit et optimisation de l'annonce</li>
+        <li>Tarification dynamique</li>
+        <li>Gestion du calendrier</li>
+        <li>Communication pré-séjour</li>
+      </ul>
+    </div>
+    <div class="tarif-card highlight">
+      <div class="tarif-recommended">Le plus choisi</div>
+      <div class="tarif-name">Gestion complète</div>
+      <h3>Tout inclus</h3>
+      <div class="tarif-price"><span>à partir de</span>18<small> % des revenus</small></div>
+      <p class="tarif-desc">La solution pour les propriétaires qui souhaitent déléguer l'intégralité de la gestion locative, sans exception et sans compromis.</p>
+      <ul class="tarif-list">
+        <li>Tout ce qui est inclus dans "En ligne"</li>
+        <li>Accueil et départ des voyageurs</li>
+        <li>Ménage et blanchisserie professionnelle</li>
+        <li>Maintenance et suivi du bien</li>
+        <li>Kit et guide de bienvenue</li>
+      </ul>
+    </div>
+    <div class="tarif-card">
+      <div class="tarif-name">Mise en service</div>
+      <h3>Lancement optimal</h3>
+      <div class="tarif-price"><span>prestation ponctuelle</span>Sur devis</div>
+      <p class="tarif-desc">Prestation unique recommandée avant la première mise en location pour maximiser l'attractivité et le taux de réservation dès le départ.</p>
+      <ul class="tarif-list">
+        <li>Séance photo professionnelle</li>
+        <li>Ménage de lancement complet</li>
+        <li>Stratégie de positionnement tarifaire</li>
+        <li>Estimation des revenus potentiels</li>
+      </ul>
+    </div>
+  </div>
+  <p class="tarifs-note">Les taux indiqués sont des fourchettes indicatives — le tarif définitif est établi lors de l'audit gratuit, en fonction de votre bien et de vos objectifs. Aucun engagement avant votre accord.</p>
+</section>
+
+<section class="blog" id="blog">
+  <div class="blog-header">
+    <div>
+      <p class="section-label">Ressources &amp; Conseils</p>
+      <h2 class="serif">J'écris pour vous aider<br><em>à décider en confiance</em></h2>
+    </div>
+    <a href="#" class="blog-link-all">Voir tous les articles <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+  </div>
+  <div class="blog-grid">
+    <div class="blog-card">
+      <div class="blog-thumb">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        <p>Photo d'illustration</p>
+      </div>
+      <div class="blog-card-body">
+        <span class="blog-tag">Location saisonnière · Ain</span>
+        <h4>Comment estimer le revenu de sa location saisonnière dans l'Ain</h4>
+        <p>Taux d'occupation, saisonnalité, positionnement tarifaire… J'explique comment calculer le potentiel réel de votre bien avant de vous lancer.</p>
+      </div>
+      <div class="blog-card-footer"><a href="#" class="blog-read">Lire l'article <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+    </div>
+    <div class="blog-card">
+      <div class="blog-thumb" style="background:linear-gradient(135deg,#4A3828,#2C2018);">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <p>Photo d'illustration</p>
+      </div>
+      <div class="blog-card-body">
+        <span class="blog-tag">Plateformes · Est Lyonnais</span>
+        <h4>Airbnb vs Booking : quelle plateforme pour votre logement à Lyon Est ?</h4>
+        <p>Les deux plateformes n'attirent pas le même type de voyageur. Voici comment choisir — ou combiner — pour maximiser vos réservations.</p>
+      </div>
+      <div class="blog-card-footer"><a href="#" class="blog-read">Lire l'article <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+    </div>
+    <div class="blog-card">
+      <div class="blog-thumb" style="background:linear-gradient(135deg,#283840,#182028);">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+        <p>Photo d'illustration</p>
+      </div>
+      <div class="blog-card-body">
+        <span class="blog-tag">Guide propriétaire</span>
+        <h4>5 questions à poser à une conciergerie avant de lui confier votre bien</h4>
+        <p>Les bonnes questions sur la réactivité, les garanties et la structure tarifaire — pour faire le bon choix en toute confiance.</p>
+      </div>
+      <div class="blog-card-footer"><a href="#" class="blog-read">Lire l'article <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+    </div>
+  </div>
+</section>
+<div class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="contact-text">
+      <p class="section-label">Audit gratuit</p>
+      <h2 class="serif">Votre rentabilité<br><em>commence ici</em></h2>
+      <p>Je commence par un audit complet de votre bien. Vous repartez avec des recommandations concrètes et une estimation réaliste de vos revenus locatifs — sans aucun engagement.</p>
+      <div class="contact-features">
+        <div class="contact-feature"><div class="contact-feature-dot"></div>Audit complet du logement — entièrement gratuit</div>
+        <div class="contact-feature"><div class="contact-feature-dot"></div>Estimation réaliste des revenus potentiels</div>
+        <div class="contact-feature"><div class="contact-feature-dot"></div>Recommandations personnalisées et actionnables</div>
+        <div class="contact-feature"><div class="contact-feature-dot"></div>Réponse personnelle de Leslye, pas un bot</div>
+        <div class="contact-feature"><div class="contact-feature-dot"></div>Aucun engagement avant votre décision</div>
+      </div>
+    </div>
+    <div class="contact-form">
+      <h3>Parlez-moi de votre bien</h3>
+      <div id="form-success" class="form-success" hidden>
+        <p>Merci ! Votre demande a bien été envoyée. Je vous répondrai sous 24h avec votre estimation personnalisée.</p>
+      </div>
+      <!-- TODO: remplacer YOUR_FORM_ID par votre identifiant Formspree réel -->
+      <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="post" novalidate>
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="prenom-idx">Prénom</label>
+            <input type="text" id="prenom-idx" name="prenom" class="form-input" placeholder="Marie" autocomplete="given-name" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="nom-idx">Nom</label>
+            <input type="text" id="nom-idx" name="nom" class="form-input" placeholder="Dupont" autocomplete="family-name" />
           </div>
         </div>
-      </section>
-
-      <section class="section container" aria-labelledby="why-lenora">
-        <h2 id="why-lenora">Pourquoi choisir Lenora Conciergerie à [Ville] ?</h2>
-        <div class="grid cards">
-          <article class="card">
-            <h3>Rentabilité maximisée</h3>
-            <p>Tarification dynamique et optimisation continue pour maximiser le revenu par nuit.</p>
-          </article>
-          <article class="card">
-            <h3>Sérénité au quotidien</h3>
-            <p>Gestion voyageurs 7j/7, coordination ménage et maintenance sans charge mentale.</p>
-          </article>
-          <article class="card">
-            <h3>Qualité premium</h3>
-            <p>Standards élevés pour des avis positifs, des séjours fluides et une image de marque forte.</p>
-          </article>
+        <div class="form-group">
+          <label class="form-label" for="email-idx">Email</label>
+          <input type="email" id="email-idx" name="email" class="form-input" placeholder="marie@exemple.fr" required autocomplete="email" />
         </div>
-      </section>
-    </main>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="tel-idx">Téléphone</label>
+            <input type="tel" id="tel-idx" name="tel" class="form-input" placeholder="06 xx xx xx xx" autocomplete="tel" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="type-bien-idx">Type de bien</label>
+            <select id="type-bien-idx" name="type-bien" class="form-input form-select">
+              <option value="">Sélectionner</option>
+              <option>Studio</option><option>T2</option><option>T3</option>
+              <option>T4 ou plus</option><option>Maison</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="ville-idx">Ville du bien</label>
+          <input type="text" id="ville-idx" name="ville" class="form-input" placeholder="Ex: Ambérieu-en-Bugey, Bourgoin-Jallieu..." autocomplete="address-level2" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message-idx">Votre message</label>
+          <textarea id="message-idx" name="message" class="form-input" rows="3" placeholder="Parlez-moi de votre bien et de vos attentes…" style="resize:vertical;"></textarea>
+        </div>
+        <button type="submit" class="btn-form">
+          Envoyer ma demande d'audit
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
 
-    <footer class="footer">
-      <div class="container footer-content">
-        <!-- TODO: remplir avec vos coordonnées réelles -->
-        <p><strong>Lenora Conciergerie</strong> — [Adresse], [Ville], France</p>
-        <p>
-          <a href="tel:[+33XXXXXXXXX]">[+33 X XX XX XX XX]</a> ·
-          <a href="mailto:[contact@lenora-conciergerie.fr]">[contact@lenora-conciergerie.fr]</a>
-        </p>
-        <p>© <span id="year"></span> Lenora Conciergerie — Tous droits réservés.</p>
+<footer>
+  <div class="footer-top">
+    <div>
+      <a href="index.html" class="footer-logo">Lenora Conciergerie</a>
+      <p class="footer-tagline">Reprenez le contrôle de votre temps. Je transforme votre bien en expérience inoubliable pour vous et vos voyageurs.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/1DVts78FRo/" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/lenora.conciergerie" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
       </div>
-    </footer>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="services.html">Mes services</a></li>
+        <li><a href="#tarifs">Tarifs</a></li>
+        <li><a href="#avis">Témoignages</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Mes services</h4>
+      <ul class="footer-links">
+        <li><a href="services.html">Gestion complète</a></li>
+        <li><a href="services.html#mise-en-service">Mise en service</a></li>
+        <li><a href="services.html">Optimisation d'annonce</a></li>
+        <li><a href="#">Conciergerie dans l'Ain</a></li>
+        <li><a href="#">Conciergerie Nord Isère</a></li>
+        <li><a href="#">Conciergerie Est Lyonnais</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Me contacter</h4>
+      <div class="footer-contact">
+        <div class="footer-contact-item"><strong>Téléphone</strong><a href="tel:0674398741">06 74 39 87 41</a></div>
+        <div class="footer-contact-item"><strong>Email</strong><a href="mailto:contact@lenora-conciergerie.fr">contact@lenora-conciergerie.fr</a></div>
+        <div class="footer-contact-item"><strong>Basée à</strong>Jujurieux — Ain (01)</div>
+        <div class="footer-contact-item"><strong>Zone</strong>Ain · Nord Isère · Est Lyonnais</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Lenora Conciergerie — Tous droits réservés</span>
+    <div class="footer-legal">
+      <a href="#">Mentions légales</a>
+      <a href="#">Confidentialité</a>
+      <a href="#">CGV</a>
+    </div>
+  </div>
+</footer>
 
-    <script src="script.js"></script>
-  </body>
+<script src="script.js"></script>
+</body>
 </html>
