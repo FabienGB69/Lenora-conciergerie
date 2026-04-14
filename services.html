@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO ─────────────────────────────────────────────────────────────── -->
+    <title>Nos Services | Lenora Conciergerie — Gestion Locative à [Ville]</title>
+    <meta name="description" content="Découvrez les services de conciergerie Lenora à [Ville] : création d'annonce, tarification dynamique, check-in/out, ménage hôtelier, maintenance et reporting. Prise en charge complète." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://[votre-domaine].fr/services.html" />
+
+    <!-- Open Graph ──────────────────────────────────────────────────────── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nos Services | Lenora Conciergerie à [Ville]" />
+    <meta property="og:description" content="Gestion locative complète : annonce, tarification dynamique, accueil voyageurs, ménage, maintenance et reporting propriétaire." />
+    <meta property="og:url" content="https://[votre-domaine].fr/services.html" />
+    <meta property="og:image" content="https://[votre-domaine].fr/images/og-services.jpg" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Favicon ─────────────────────────────────────────────────────────── -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Fonts ───────────────────────────────────────────────────────────── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Schema.org Service ──────────────────────────────────────────────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Gestion locative courte durée",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Lenora Conciergerie",
+        "url": "https://[votre-domaine].fr",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "[Ville]",
+          "addressCountry": "FR"
+        }
+      },
+      "areaServed": "[Ville]",
+      "description": "Prise en charge complète de votre location saisonnière : annonce, check-in/out, ménage hôtelier, maintenance et reporting propriétaire.",
+      "serviceType": "Conciergerie locative"
+    }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="index.html" class="brand">Lenora Conciergerie</a>
+        <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+        <ul id="menu" class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a class="active" href="services.html">Services</a></li>
+          <li><a href="methode.html">Méthode</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container section">
+        <h1 class="page-title">Nos services à [Ville]</h1>
+        <p class="intro">
+          Une prise en charge complète de votre location saisonnière, modulable
+          selon le niveau de délégation souhaité.
+        </p>
+
+        <div class="grid cards" aria-label="Liste des services">
+          <article class="card">
+            <h2>Création d'annonce</h2>
+            <p>Positionnement concurrentiel, rédaction persuasive, visuels professionnels et optimisation SEO plateforme pour maximiser votre visibilité.</p>
+          </article>
+          <article class="card">
+            <h2>Tarification dynamique</h2>
+            <p>Ajustement automatique des prix selon la saison, les événements locaux et la demande en temps réel pour maximiser chaque nuit.</p>
+          </article>
+          <article class="card">
+            <h2>Check-in / Check-out</h2>
+            <p>Accueil personnalisé, remise des clés, assistance voyageurs 7j/7 et suivi rigoureux de chaque départ pour une expérience 5 étoiles.</p>
+          </article>
+          <article class="card">
+            <h2>Ménage hôtelier</h2>
+            <p>Protocoles de qualité hôtelière, réassort des consommables et contrôle systématique entre chaque séjour.</p>
+          </article>
+          <article class="card">
+            <h2>Maintenance</h2>
+            <p>Prévention des pannes et interventions rapides grâce à un réseau de partenaires locaux qualifiés à [Ville].</p>
+          </article>
+          <article class="card">
+            <h2>Reporting propriétaire</h2>
+            <p>Tableau de bord mensuel clair : revenus, taux d'occupation, avis voyageurs et recommandations d'optimisation.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- CTA section ──────────────────────────────────────────────────── -->
+      <section class="section section-alt">
+        <div class="container cta-section">
+          <h2>Prêt à déléguer la gestion de votre bien ?</h2>
+          <p class="intro">Obtenez une estimation gratuite et personnalisée sous 24h.</p>
+          <a class="btn btn-primary" href="contact.html">Demander mon estimation gratuite</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p><strong>Lenora Conciergerie</strong> — [Adresse], [Ville], France</p>
+        <p>
+          <a href="tel:[+33XXXXXXXXX]">[+33 X XX XX XX XX]</a> ·
+          <a href="mailto:[contact@lenora-conciergerie.fr]">[contact@lenora-conciergerie.fr]</a>
+        </p>
+        <p>© <span id="year"></span> Lenora Conciergerie.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

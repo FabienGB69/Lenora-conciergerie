@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO ─────────────────────────────────────────────────────────────── -->
+    <title>Estimation Gratuite | Lenora Conciergerie à [Ville]</title>
+    <meta name="description" content="Obtenez une estimation gratuite pour la gestion de votre location saisonnière à [Ville]. Réponse sous 24h ouvrées. Confiez votre bien à Lenora Conciergerie." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://[votre-domaine].fr/contact.html" />
+
+    <!-- Open Graph ──────────────────────────────────────────────────────── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Estimation Gratuite | Lenora Conciergerie" />
+    <meta property="og:description" content="Obtenez une estimation personnalisée pour la gestion de votre bien. Réponse sous 24h." />
+    <meta property="og:url" content="https://[votre-domaine].fr/contact.html" />
+    <meta property="og:image" content="https://[votre-domaine].fr/images/og-contact.jpg" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Favicon ─────────────────────────────────────────────────────────── -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Fonts ───────────────────────────────────────────────────────────── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="index.html" class="brand">Lenora Conciergerie</a>
+        <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+        <ul id="menu" class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="methode.html">Méthode</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container section">
+      <h1 class="page-title">Obtenez votre estimation gratuite</h1>
+      <p class="intro">
+        Partagez les informations sur votre bien et nous revenons vers vous sous 24h ouvrées
+        avec une estimation personnalisée, sans engagement.
+      </p>
+
+      <!-- Message de succès — affiché après envoi réussi du formulaire -->
+      <div class="form-success" id="form-success" role="alert" aria-live="polite" hidden>
+        <p>
+          Merci ! Votre demande a bien été envoyée.<br />
+          Nous vous répondrons sous 24h ouvrées avec votre estimation.
+        </p>
+      </div>
+
+      <form
+        class="contact-form"
+        id="contact-form"
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="post"
+        novalidate
+      >
+        <!-- TODO: remplacer YOUR_FORM_ID par votre identifiant Formspree réel -->
+
+        <!-- Honeypot anti-spam (caché pour les humains, rempli par les bots) -->
+        <input
+          type="text"
+          name="_gotcha"
+          tabindex="-1"
+          autocomplete="off"
+          aria-hidden="true"
+          style="display:none"
+        />
+
+        <div class="form-group">
+          <label for="name">
+            Nom complet <span class="required" aria-hidden="true">*</span>
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            autocomplete="name"
+            aria-required="true"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">
+            Adresse e-mail <span class="required" aria-hidden="true">*</span>
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            autocomplete="email"
+            aria-required="true"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">
+            Téléphone <span class="label-hint">(optionnel)</span>
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            autocomplete="tel"
+            placeholder="06 XX XX XX XX"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="city">
+            Ville du bien <span class="required" aria-hidden="true">*</span>
+          </label>
+          <input
+            type="text"
+            id="city"
+            name="city"
+            required
+            autocomplete="address-level2"
+            aria-required="true"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">
+            Votre message <span class="required" aria-hidden="true">*</span>
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            aria-required="true"
+            placeholder="Décrivez votre bien : type, superficie, disponibilités…"
+          ></textarea>
+        </div>
+
+        <button class="btn btn-primary btn-submit" type="submit">
+          Obtenir mon estimation gratuite
+        </button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p><strong>Lenora Conciergerie</strong> — [Adresse], [Ville], France</p>
+        <p>
+          <a href="tel:[+33XXXXXXXXX]">[+33 X XX XX XX XX]</a> ·
+          <a href="mailto:[contact@lenora-conciergerie.fr]">[contact@lenora-conciergerie.fr]</a>
+        </p>
+        <p>© <span id="year"></span> Lenora Conciergerie.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
