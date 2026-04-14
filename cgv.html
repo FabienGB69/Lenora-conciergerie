@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conditions Générales de Vente | Lenora Conciergerie</title>
+  <meta name="robots" content="noindex, follow" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">Lenora Conciergerie</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="index.html#about">À propos</a></li>
+    <li>
+      <a href="services.html">Mes services <span class="nav-arrow">&#9662;</span></a>
+      <div class="nav-dropdown">
+        <div class="drop-section">Prestations</div>
+        <a href="services.html">Gestion complète</a>
+        <a href="services.html#mise-en-service">Mise en service</a>
+        <a href="services.html">Optimisation d'annonce</a>
+        <a href="methode.html">Comment ça marche</a>
+        <div class="drop-sep"></div>
+        <a href="index.html#tarifs">Voir les tarifs &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <a href="index.html#zones">Zones <span class="nav-arrow">&#9662;</span></a>
+      <div class="nav-dropdown">
+        <div class="drop-section">Pages locales SEO</div>
+        <a href="ain.html">Conciergerie dans l'Ain</a>
+        <a href="nord-isere.html">Conciergerie Nord Isère</a>
+        <a href="est-lyonnais.html">Conciergerie Est Lyonnais</a>
+      </div>
+    </li>
+    <li><a href="index.html#tarifs">Tarifs</a></li>
+    <li><a href="index.html#blog">Blog</a></li>
+    <li><a href="contact.html" class="nav-cta">Audit gratuit</a></li>
+  </ul>
+  <button class="nav-hamburger" id="navHamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile-overlay" id="mobileOverlay">
+  <ul class="nav-mobile-links">
+    <li><a href="index.html" onclick="closeMobile()">Accueil</a></li>
+    <li><a href="index.html#about" onclick="closeMobile()">À propos</a></li>
+    <li>
+      <a href="services.html" onclick="toggleMobileSub(event,'sub-services')">
+        Mes services <span class="mobile-chevron" id="chev-services">&#9662;</span>
+      </a>
+      <div class="mobile-sub" id="sub-services">
+        <a href="services.html" onclick="closeMobile()">Gestion complète</a>
+        <a href="services.html#mise-en-service" onclick="closeMobile()">Mise en service</a>
+        <a href="services.html" onclick="closeMobile()">Optimisation d'annonce</a>
+        <a href="methode.html" onclick="closeMobile()">Comment ça marche</a>
+        <a href="index.html#tarifs" onclick="closeMobile()">Voir les tarifs</a>
+      </div>
+    </li>
+    <li>
+      <a href="index.html#zones" onclick="toggleMobileSub(event,'sub-zones')">
+        Zones <span class="mobile-chevron" id="chev-zones">&#9662;</span>
+      </a>
+      <div class="mobile-sub" id="sub-zones">
+        <a href="ain.html" onclick="closeMobile()">Conciergerie dans l'Ain</a>
+        <a href="nord-isere.html" onclick="closeMobile()">Conciergerie Nord Isère</a>
+        <a href="est-lyonnais.html" onclick="closeMobile()">Conciergerie Est Lyonnais</a>
+      </div>
+    </li>
+    <li><a href="index.html#tarifs" onclick="closeMobile()">Tarifs</a></li>
+    <li><a href="index.html#blog" onclick="closeMobile()">Blog</a></li>
+  </ul>
+  <a href="contact.html" class="nav-mobile-cta" onclick="closeMobile()">
+    Audit gratuit
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-content">
+    <p class="hero-eyebrow">Documents contractuels</p>
+    <h1>Conditions Générales <em>de Vente</em></h1>
+    <p>Modalités d'exercice des prestations de conciergerie et de gestion locative saisonnière proposées par Lenora Conciergerie.</p>
+  </div>
+</section>
+
+<main style="max-width:800px; margin:0 auto; padding:80px 24px 120px;">
+
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Les présentes Conditions Générales de Vente (ci-après « CGV ») régissent les relations contractuelles entre&nbsp;:
+  </p>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    <strong style="color:var(--charcoal); font-weight:500;">Lenora Conciergerie — Leslye</strong><br>
+    Micro-entreprise<br>
+    Jujurieux, 01640 — Ain, France<br>
+    Téléphone&nbsp;: <a href="tel:0674398741" style="color:var(--copper); text-decoration:none;">06 74 39 87 41</a><br>
+    Email&nbsp;: <a href="mailto:contact@lenora-conciergerie.fr" style="color:var(--copper); text-decoration:none;">contact@lenora-conciergerie.fr</a><br>
+    Site web&nbsp;: <a href="https://lenora-conciergerie.fr" style="color:var(--copper); text-decoration:none;">lenora-conciergerie.fr</a>
+  </p>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:40px;">
+    ci-après désigné « le Prestataire », et toute personne physique ou morale souhaitant bénéficier de ses services, ci-après désignée « le Propriétaire ». Toute commande de prestation implique l'acceptation pleine et entière des présentes CGV.
+  </p>
+
+  <h2 style="font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:500; color:var(--forest); margin:40px 0 12px;">Article 1 — Objet</h2>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Les présentes CGV ont pour objet de définir les conditions dans lesquelles Lenora Conciergerie fournit ses prestations de <strong style="color:var(--charcoal); font-weight:500;">conciergerie et de gestion locative saisonnière</strong> pour le compte de propriétaires de biens immobiliers situés dans l'Ain, le Nord Isère et l'Est Lyonnais. Ces prestations couvrent notamment la gestion des réservations, l'accueil des voyageurs, l'entretien du bien et toutes actions visant à optimiser les revenus locatifs du Propriétaire.
+  </p>
+
+  <h2 style="font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:500; color:var(--forest); margin:40px 0 12px;">Article 2 — Prestations proposées</h2>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Lenora Conciergerie propose les prestations suivantes&nbsp;:
+  </p>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:12px;">
+    <strong style="color:var(--charcoal); font-weight:500;">Gestion complète</strong><br>
+    Prise en charge intégrale de la location saisonnière&nbsp;: publication et optimisation des annonces, gestion des réservations et de la communication voyageurs, accueil et remise des clés, ménage et linge, suivi et reporting mensuel. La rémunération du Prestataire est calculée sur la base d'une <strong style="color:var(--charcoal); font-weight:500;">commission de 18 % à 22 % HT des revenus locatifs encaissés</strong>, selon la nature et les caractéristiques du bien. Le taux exact est déterminé à l'issue de l'audit gratuit et formalisé dans le devis accepté par le Propriétaire.
+  </p>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:12px;">
+    <strong style="color:var(--charcoal); font-weight:500;">Mise en service</strong><br>
+    Prestation ponctuelle destinée à préparer un bien immobilier en vue de sa mise en location saisonnière&nbsp;: création des annonces, séance photo, paramétrage des plateformes, conseil en aménagement et équipement. Tarif établi sur devis après visite ou audit du bien.
+  </p>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    <strong style="color:var(--charcoal); font-weight:500;">Optimisation d'annonce</strong><br>
+    Audit et refonte des annonces existantes sur les plateformes de réservation (Airbnb, Booking, etc.)&nbsp;: rédaction, photographies, stratégie tarifaire. Tarif établi sur devis.
+  </p>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Les tarifs des prestations ponctuelles (Mise en service, Optimisation d'annonce) sont communiqués au Propriétaire à l'issue d'un premier échange et formalisés par devis écrit.
+  </p>
+
+  <h2 style="font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:500; color:var(--forest); margin:40px 0 12px;">Article 3 — Devis et commande</h2>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    La relation commerciale débute par un <strong style="color:var(--charcoal); font-weight:500;">audit gratuit</strong> du bien, réalisé en présentiel ou à distance selon les cas. À l'issue de cet audit, Lenora Conciergerie adresse au Propriétaire un devis détaillé précisant les prestations retenues, la commission applicable et les modalités d'exécution.
+  </p>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    La commande est réputée ferme et définitive à réception du <strong style="color:var(--charcoal); font-weight:500;">bon pour accord signé</strong> par le Propriétaire, accompagné, le cas échéant, de la signature du contrat de prestation. Le démarrage effectif de la prestation intervient après retour du bon pour accord et transmission des informations et accès nécessaires par le Propriétaire.
+  </p>
+
+  <h2 style="font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:500; color:var(--forest); margin:40px 0 12px;">Article 4 — Durée et résiliation</h2>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Le contrat de gestion complète est conclu pour une <strong style="color:var(--charcoal); font-weight:500;">durée indéterminée</strong>, prenant effet à la date de signature du bon pour accord.
+  </p>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Chacune des parties peut mettre fin au contrat à tout moment, sous réserve du respect d'un <strong style="color:var(--charcoal); font-weight:500;">préavis de 30 jours calendaires</strong>, notifié par lettre recommandée avec accusé de réception adressée à l'autre partie. Le préavis court à compter de la date de première présentation du courrier.
+  </p>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Durant la période de préavis, les obligations contractuelles des deux parties demeurent pleinement applicables. Les réservations confirmées avant la notification de résiliation seront honorées jusqu'à leur terme.
+  </p>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Les prestations ponctuelles (Mise en service, Optimisation d'annonce) ne sont pas soumises à préavis&nbsp;; elles prennent fin à l'issue de la livraison convenue.
+  </p>
+
+  <h2 style="font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:500; color:var(--forest); margin:40px 0 12px;">Article 5 — Obligations du prestataire</h2>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Lenora Conciergerie s'engage à&nbsp;:
+  </p>
+  <ul style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px; padding-left:24px;">
+    <li>Assurer une <strong style="color:var(--charcoal); font-weight:500;">gestion professionnelle</strong> du bien conformément aux pratiques en vigueur dans le secteur de la location saisonnière</li>
+    <li>Faire preuve de <strong style="color:var(--charcoal); font-weight:500;">réactivité</strong> dans la gestion des demandes des voyageurs et du Propriétaire</li>
+    <li>Adresser au Propriétaire un <strong style="color:var(--charcoal); font-weight:500;">reporting mensuel</strong> récapitulant les nuitées réalisées, les revenus encaissés et les éventuelles charges engagées pour le compte du Propriétaire</li>
+    <li>Respecter la confidentialité des informations relatives au bien et au Propriétaire</li>
+    <li>Informer le Propriétaire de tout incident significatif survenu dans le bien dans les meilleurs délais</li>
+  </ul>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Lenora Conciergerie est soumise à une <strong style="color:var(--charcoal); font-weight:500;">obligation de moyens</strong> et non de résultat quant aux revenus locatifs générés, ceux-ci dépendant de facteurs extérieurs (marché, saisonnalité, état du bien, etc.).
+  </p>
+
+  <h2 style="font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:500; color:var(--forest); margin:40px 0 12px;">Article 6 — Obligations du propriétaire</h2>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Le Propriétaire s'engage à&nbsp;:
+  </p>
+  <ul style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px; padding-left:24px;">
+    <li><strong style="color:var(--charcoal); font-weight:500;">Mettre le bien à disposition</strong> du Prestataire dans un état conforme à la location saisonnière et en bon état de fonctionnement</li>
+    <li><strong style="color:var(--charcoal); font-weight:500;">Informer le Prestataire</strong> de toutes les contraintes, restrictions ou obligations spécifiques attachées au bien (règlement de copropriété, limitations d'usage, travaux prévus, périodes d'indisponibilité, etc.)</li>
+    <li>S'assurer que le bien est en conformité avec la réglementation applicable à la location meublée de tourisme (déclaration en mairie, respect des normes de sécurité, etc.)</li>
+    <li>Procéder au <strong style="color:var(--charcoal); font-weight:500;">règlement des factures</strong> émises par le Prestataire dans les délais convenus</li>
+    <li>Communiquer promptement au Prestataire tout élément susceptible d'affecter l'exécution de la prestation</li>
+  </ul>
+
+  <h2 style="font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:500; color:var(--forest); margin:40px 0 12px;">Article 7 — Facturation et paiement</h2>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Pour la prestation de <strong style="color:var(--charcoal); font-weight:500;">gestion complète</strong>, la facturation est mensuelle et établie sur la base des revenus locatifs effectivement encaissés au cours du mois écoulé. La facture est adressée au Propriétaire en début de mois suivant, accompagnée du reporting mensuel.
+  </p>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Pour les prestations ponctuelles, la facturation intervient à la livraison ou selon les modalités précisées dans le devis accepté.
+  </p>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Le règlement s'effectue exclusivement par <strong style="color:var(--charcoal); font-weight:500;">virement bancaire</strong>, dans un délai de <strong style="color:var(--charcoal); font-weight:500;">15 jours</strong> à compter de la date d'émission de la facture. Les coordonnées bancaires figurent sur chaque facture.
+  </p>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    En cas de retard de paiement, des pénalités de retard sont applicables de plein droit au taux légal en vigueur, sans qu'une mise en demeure préalable soit nécessaire. Une indemnité forfaitaire de recouvrement de 40 € est également due conformément à l'article L. 441-10 du Code de commerce.
+  </p>
+
+  <h2 style="font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:500; color:var(--forest); margin:40px 0 12px;">Article 8 — Responsabilité</h2>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Lenora Conciergerie est responsable des dommages causés directement par une <strong style="color:var(--charcoal); font-weight:500;">faute professionnelle</strong> avérée dans l'exécution de ses missions (négligence grave, manquement caractérisé aux obligations contractuelles). Sa responsabilité est limitée au montant des honoraires perçus au cours des trois derniers mois précédant le fait générateur du dommage.
+  </p>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Lenora Conciergerie <strong style="color:var(--charcoal); font-weight:500;">ne peut être tenue responsable</strong> des dommages causés au bien ou à des tiers par les voyageurs hébergés. Le Propriétaire est seul responsable de la souscription d'une assurance adaptée à la location meublée de tourisme (assurance habitation avec clause location saisonnière, assurance annulation, etc.). Il est fortement recommandé d'activer les garanties proposées par les plateformes de réservation (AirCover d'Airbnb, etc.).
+  </p>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Le Prestataire n'est pas davantage responsable des dommages résultant de cas de force majeure, de la défaillance des plateformes de réservation ou de tout événement extérieur échappant à son contrôle.
+  </p>
+
+  <h2 style="font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:500; color:var(--forest); margin:40px 0 12px;">Article 9 — Propriété intellectuelle</h2>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Les <strong style="color:var(--charcoal); font-weight:500;">annonces et contenus créés par Lenora Conciergerie</strong> dans le cadre de ses prestations — textes descriptifs, visuels, identité graphique des annonces, stratégies tarifaires — demeurent la propriété intellectuelle exclusive du Prestataire.
+  </p>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Le Propriétaire bénéficie d'une licence d'utilisation de ces contenus pour la durée du contrat. En cas de résiliation, le Propriétaire ne peut utiliser les contenus créés par Lenora Conciergerie qu'avec son accord écrit préalable.
+  </p>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Les photographies du bien réalisées par ou pour le compte de Lenora Conciergerie font l'objet d'une cession de droits d'usage limitée à la location saisonnière du bien concerné. Toute utilisation commerciale à d'autres fins est soumise à accord préalable.
+  </p>
+
+  <h2 style="font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:500; color:var(--forest); margin:40px 0 12px;">Article 10 — Droit applicable et juridiction compétente</h2>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    Les présentes CGV et les relations contractuelles entre Lenora Conciergerie et le Propriétaire sont régies exclusivement par le <strong style="color:var(--charcoal); font-weight:500;">droit français</strong>.
+  </p>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    En cas de litige relatif à l'interprétation, l'exécution ou la résiliation du contrat, les parties s'engagent à rechercher une solution amiable dans un délai de 30 jours à compter de la notification du différend par l'une des parties.
+  </p>
+  <p style="color:var(--mid); font-size:15px; line-height:1.8; font-weight:300; margin-bottom:16px;">
+    À défaut de résolution amiable, tout litige sera porté devant le <strong style="color:var(--charcoal); font-weight:500;">Tribunal compétent de Bourg-en-Bresse</strong> (Ain), auquel les parties attribuent compétence exclusive.
+  </p>
+
+  <p style="color:var(--mid); font-size:14px; line-height:1.8; font-weight:300; margin-top:48px; padding-top:24px; border-top:1px solid rgba(107,97,85,0.15);">
+    <strong style="color:var(--charcoal); font-weight:500;">Dernière mise à jour&nbsp;: 14 avril 2026</strong>
+  </p>
+
+</main>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <a href="index.html" class="footer-logo">Lenora Conciergerie</a>
+      <p class="footer-tagline">Reprenez le contrôle de votre temps. Je transforme votre bien en expérience inoubliable pour vous et vos voyageurs.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/1DVts78FRo/" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/lenora.conciergerie" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html#about">À propos</a></li>
+        <li><a href="services.html">Mes services</a></li>
+        <li><a href="index.html#tarifs">Tarifs</a></li>
+        <li><a href="index.html#avis">Témoignages</a></li>
+        <li><a href="index.html#blog">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Mes services</h4>
+      <ul class="footer-links">
+        <li><a href="services.html">Gestion complète</a></li>
+        <li><a href="services.html#mise-en-service">Mise en service</a></li>
+        <li><a href="services.html">Optimisation d'annonce</a></li>
+        <li><a href="methode.html">Comment ça marche</a></li>
+        <li><a href="ain.html">Conciergerie dans l'Ain</a></li>
+        <li><a href="nord-isere.html">Conciergerie Nord Isère</a></li>
+        <li><a href="est-lyonnais.html">Conciergerie Est Lyonnais</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Me contacter</h4>
+      <div class="footer-contact">
+        <div class="footer-contact-item"><strong>Téléphone</strong><a href="tel:0674398741">06 74 39 87 41</a></div>
+        <div class="footer-contact-item"><strong>Email</strong><a href="mailto:contact@lenora-conciergerie.fr">contact@lenora-conciergerie.fr</a></div>
+        <div class="footer-contact-item"><strong>Basée à</strong>Jujurieux — Ain (01)</div>
+        <div class="footer-contact-item"><strong>Zone</strong>Ain · Nord Isère · Est Lyonnais</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Lenora Conciergerie — Tous droits réservés</span>
+    <div class="footer-legal">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="confidentialite.html">Confidentialité</a>
+      <a href="cgv.html">CGV</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>

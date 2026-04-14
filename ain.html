@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conciergerie dans l'Ain | Lenora Conciergerie — Gestion Location Saisonnière</title>
+  <meta name="description" content="Conciergerie dans l'Ain (01) : gestion complète de votre location saisonnière à Jujurieux, Bourg-en-Bresse, Pérouges et partout dans l'Ain. Audit gratuit." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://lenora-conciergerie.fr/ain" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Conciergerie dans l'Ain | Lenora Conciergerie — Gestion Location Saisonnière" />
+  <meta property="og:description" content="Gestion locative saisonnière dans l'Ain : de la Dombes au Bugey, je prends en charge votre bien de A à Z. Basée à Jujurieux, réactivité locale garantie." />
+  <meta property="og:url" content="https://lenora-conciergerie.fr/ain" />
+  <meta property="og:image" content="https://lenora-conciergerie.fr/images/og-ain.jpg" />
+  <meta property="og:locale" content="fr_FR" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Lenora Conciergerie",
+    "description": "Conciergerie spécialisée en gestion de locations saisonnières dans tout le département de l'Ain (01) : Dombes, Bugey, Bresse, vallée de l'Ain.",
+    "url": "https://lenora-conciergerie.fr",
+    "telephone": "+33674398741",
+    "email": "contact@lenora-conciergerie.fr",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jujurieux",
+      "addressLocality": "Jujurieux",
+      "postalCode": "01640",
+      "addressRegion": "Ain",
+      "addressCountry": "FR"
+    },
+    "areaServed": "Ain"
+  }
+  </script>
+</head>
+<body>
+
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">Lenora Conciergerie</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="index.html#about">À propos</a></li>
+    <li>
+      <a href="services.html">Mes services <span class="nav-arrow">&#9662;</span></a>
+      <div class="nav-dropdown">
+        <div class="drop-section">Prestations</div>
+        <a href="services.html">Gestion complète</a>
+        <a href="services.html#mise-en-service">Mise en service</a>
+        <a href="services.html">Optimisation d'annonce</a>
+        <a href="methode.html">Comment ça marche</a>
+        <div class="drop-sep"></div>
+        <a href="index.html#tarifs">Voir les tarifs &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <a href="index.html#zones">Zones <span class="nav-arrow">&#9662;</span></a>
+      <div class="nav-dropdown">
+        <div class="drop-section">Pages locales SEO</div>
+        <a href="ain.html" class="active">Conciergerie dans l'Ain</a>
+        <a href="nord-isere.html">Conciergerie Nord Isère</a>
+        <a href="est-lyonnais.html">Conciergerie Est Lyonnais</a>
+      </div>
+    </li>
+    <li><a href="index.html#tarifs">Tarifs</a></li>
+    <li><a href="index.html#blog">Blog</a></li>
+    <li><a href="contact.html" class="nav-cta">Audit gratuit</a></li>
+  </ul>
+  <button class="nav-hamburger" id="navHamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile-overlay" id="mobileOverlay">
+  <ul class="nav-mobile-links">
+    <li><a href="index.html" onclick="closeMobile()">Accueil</a></li>
+    <li><a href="index.html#about" onclick="closeMobile()">À propos</a></li>
+    <li>
+      <a href="services.html" onclick="toggleMobileSub(event,'sub-services')">
+        Mes services <span class="mobile-chevron" id="chev-services">&#9662;</span>
+      </a>
+      <div class="mobile-sub" id="sub-services">
+        <a href="services.html" onclick="closeMobile()">Gestion complète</a>
+        <a href="services.html#mise-en-service" onclick="closeMobile()">Mise en service</a>
+        <a href="services.html" onclick="closeMobile()">Optimisation d'annonce</a>
+        <a href="methode.html" onclick="closeMobile()">Comment ça marche</a>
+        <a href="index.html#tarifs" onclick="closeMobile()">Voir les tarifs</a>
+      </div>
+    </li>
+    <li>
+      <a href="index.html#zones" onclick="toggleMobileSub(event,'sub-zones')">
+        Zones <span class="mobile-chevron" id="chev-zones">&#9662;</span>
+      </a>
+      <div class="mobile-sub" id="sub-zones">
+        <a href="ain.html" onclick="closeMobile()">Conciergerie dans l'Ain</a>
+        <a href="nord-isere.html" onclick="closeMobile()">Conciergerie Nord Isère</a>
+        <a href="est-lyonnais.html" onclick="closeMobile()">Conciergerie Est Lyonnais</a>
+      </div>
+    </li>
+    <li><a href="index.html#tarifs" onclick="closeMobile()">Tarifs</a></li>
+    <li><a href="index.html#blog" onclick="closeMobile()">Blog</a></li>
+  </ul>
+  <a href="contact.html" class="nav-mobile-cta" onclick="closeMobile()">
+    Audit gratuit
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </a>
+</div>
+
+<!-- ─── HERO ─────────────────────────────────── -->
+<section class="page-hero">
+  <div class="page-hero-content">
+    <p class="hero-eyebrow">Conciergerie · Ain (01)</p>
+    <h1>La conciergerie de <em>référence dans l'Ain</em></h1>
+    <p>Basée à Jujurieux au cœur du département, je gère votre location saisonnière dans toute l'Ain avec la réactivité d'une prestataire locale. De la Dombes au Bugey, de Bourg-en-Bresse à Pérouges, votre bien est entre de bonnes mains.</p>
+  </div>
+</section>
+
+<!-- ─── SECTION 1 — POURQUOI L'AIN ───────────── -->
+<section style="background: var(--cream); padding: 100px 60px;">
+  <div style="max-width: 1120px; margin: 0 auto;">
+    <p class="section-label">Un territoire d'exception</p>
+    <h2 class="serif" style="margin-bottom: 16px;">Pourquoi l'Ain est un marché <em>porteur</em></h2>
+    <p style="color: var(--mid); font-size: 15px; line-height: 1.8; max-width: 640px; font-weight: 300; margin-bottom: 64px;">Le département de l'Ain cumule des atouts touristiques et économiques rares : nature préservée, gastronomie reconnue, proximité de Lyon et d'un bassin d'emploi dynamique. La location saisonnière y est en plein essor.</p>
+
+    <div class="zones-grid">
+
+      <!-- Card 1 — Dombes & tourisme nature -->
+      <div class="zone-card">
+        <div class="zone-dept">01</div>
+        <div class="zone-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Dombes &amp; tourisme nature</h3>
+        <p style="font-size: 14px; line-height: 1.75; color: var(--mid); font-weight: 300; margin-bottom: 16px;">La Dombes, surnommée "la région aux mille étangs", attire chaque année des milliers de visiteurs venus pour l'ornithologie, la pêche et la randonnée. Les gîtes et maisons de campagne s'y louent à des taux d'occupation exceptionnels sur les saisons de printemps et d'automne, portés par le parc des oiseaux de Villars-les-Dombes et les circuits vélo en plein développement.</p>
+        <p style="font-size: 13px; color: var(--light-text); font-style: italic; font-family: 'Cormorant Garamond', serif; line-height: 1.6;">Un bien bien positionné en Dombes peut atteindre 70 à 80 % de taux d'occupation sur la haute saison.</p>
+      </div>
+
+      <!-- Card 2 — Bugey & proximité Lyon -->
+      <div class="zone-card">
+        <div class="zone-dept">01</div>
+        <div class="zone-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3>Bugey &amp; proximité Lyon</h3>
+        <p style="font-size: 14px; line-height: 1.75; color: var(--mid); font-weight: 300; margin-bottom: 16px;">Le Bugey, entre rivière d'Ain et massif du Jura, est à moins de 50 km de Lyon. Cette proximité génère une forte demande de week-ends ressourçants de la part des Lyonnais. Randonnée, canoë-kayak, cyclotourisme sur la Via Rhôna, vins du Bugey classés AOC — les voyageurs cherchent ici une vraie coupure au vert à portée de métropole. Les locations à Jujurieux, Ambérieu-en-Bugey ou Belley bénéficient de ce flux régulier toute l'année.</p>
+        <p style="font-size: 13px; color: var(--light-text); font-style: italic; font-family: 'Cormorant Garamond', serif; line-height: 1.6;">La rivière d'Ain et ses gorges génèrent une demande estivale soutenue, avec des prix au nuitée en constante progression.</p>
+      </div>
+
+      <!-- Card 3 — Gastronomie & tourisme culturel -->
+      <div class="zone-card">
+        <div class="zone-dept">01</div>
+        <div class="zone-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <h3>Gastronomie &amp; tourisme culturel</h3>
+        <p style="font-size: 14px; line-height: 1.75; color: var(--mid); font-weight: 300; margin-bottom: 16px;">L'Ain est le berceau de la volaille de Bresse AOP, seule volaille au monde bénéficiant d'une appellation d'origine. Pérouges, cité médiévale classée parmi les plus beaux villages de France, Bourg-en-Bresse avec son monastère royal de Brou, les caves viticoles du Revermont — autant de pôles d'attraction qui génèrent une demande touristique diversifiée, des familles aux voyageurs culturels exigeants. La location saisonnière dans l'Ain bénéficie d'une image de qualité qui se traduit directement en revenus.</p>
+        <p style="font-size: 13px; color: var(--light-text); font-style: italic; font-family: 'Cormorant Garamond', serif; line-height: 1.6;">Pérouges et Bourg-en-Bresse attirent des voyageurs à fort pouvoir d'achat, favorables aux hébergements premium.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── SECTION 2 — SERVICES DANS L'AIN ──────── -->
+<section style="background: var(--warm-white); padding: 100px 60px;">
+  <div style="max-width: 1120px; margin: 0 auto;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 56px; gap: 40px; flex-wrap: wrap;">
+      <div>
+        <p class="section-label">Ce que je fais pour vous dans l'Ain</p>
+        <h2 class="serif">Mes services de <em>gestion locative</em></h2>
+      </div>
+      <p style="max-width: 380px; font-size: 15px; line-height: 1.8; color: var(--mid); font-weight: 300;">Une prise en charge complète de votre location saisonnière dans l'Ain, adaptée aux spécificités du marché local.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-num">01</div>
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3>Présence en ligne optimisée</h3>
+        <p class="service-sub-label">Visibilité maximale dans l'Ain</p>
+        <ul class="service-list">
+          <li>Création ou refonte d'annonce avec mots-clés locaux Ain</li>
+          <li>Mise en valeur des attraits du territoire (Dombes, Bugey, Bresse)</li>
+          <li>Diffusion sur Airbnb, Booking, VRBO et autres plateformes</li>
+          <li>Tarification dynamique adaptée à la saisonnalité locale</li>
+          <li>Synchronisation multi-plateformes et gestion du calendrier</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">02</div>
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Accueil des voyageurs</h3>
+        <p class="service-sub-label">Expérience locale premium</p>
+        <ul class="service-list">
+          <li>Check-in autonome ou physique selon vos préférences</li>
+          <li>Guide de bienvenue avec bonnes adresses du territoire aindinois</li>
+          <li>Communication 7j/7 avec les voyageurs</li>
+          <li>Recommandations : restaurants, randonnées, caves, marchés locaux</li>
+          <li>Résolution des imprévus avec réactivité locale</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">03</div>
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Intendance &amp; entretien</h3>
+        <p class="service-sub-label">Sérénité totale</p>
+        <ul class="service-list">
+          <li>Ménage professionnel entre chaque séjour</li>
+          <li>Fourniture et renouvellement du linge de qualité</li>
+          <li>Vérification et inventaire après chaque départ</li>
+          <li>Réapprovisionnement des consommables</li>
+          <li>Signalement et suivi des réparations avec artisans locaux</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">04</div>
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <h3>Optimisation de revenus</h3>
+        <p class="service-sub-label">Maximisation locative dans l'Ain</p>
+        <ul class="service-list">
+          <li>Analyse comparative du marché locatif aindinois</li>
+          <li>Tarification saisonnière (Pâques, été, fêtes de la volaille…)</li>
+          <li>Stratégie de remplissage aux périodes creuses</li>
+          <li>Reporting mensuel détaillé de vos revenus</li>
+          <li>Conseils pour améliorer classement et notes</li>
+        </ul>
+      </div>
+
+      <div class="service-card service-card-wide" id="mise-en-service-ain">
+        <div class="service-num">05</div>
+        <div>
+          <h3>Mise en service complète dans l'Ain</h3>
+          <p class="service-sub-label">Démarrage clé en main</p>
+          <ul class="service-list">
+            <li>Audit complet du logement et recommandations</li>
+            <li>Mise aux normes décoration et équipements selon les attentes du marché local</li>
+            <li>Création du dossier réglementaire (déclaration mairie en préfecture de l'Ain)</li>
+            <li>Shooting photo professionnel valorisant l'environnement aindinois</li>
+            <li>Rédaction et publication de l'annonce</li>
+          </ul>
+        </div>
+        <div class="wide-right">
+          <p>Vous avez un bien dans l'Ain prêt à être loué mais ne savez pas par où commencer ? Basée à Jujurieux, j'interviens rapidement sur l'ensemble du département. Je prends en charge l'intégralité du démarrage : de l'audit initial à la première réservation. Vous recevez un rapport complet avec les actions prioritaires et une estimation réaliste de vos revenus potentiels sur le marché aindinois.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── VILLES COUVERTES DANS L'AIN ──────────── -->
+<section style="background: var(--cream); padding: 80px 60px;">
+  <div style="max-width: 1120px; margin: 0 auto;">
+    <p class="section-label">Couverture géographique</p>
+    <h2 class="serif" style="margin-bottom: 16px;">Les communes <em>couvertes dans l'Ain</em></h2>
+    <p style="color: var(--mid); font-size: 15px; line-height: 1.8; max-width: 600px; font-weight: 300; margin-bottom: 40px;">J'interviens dans tout le département de l'Ain pour la gestion de vos locations saisonnières. Voici les principales communes où je suis déjà présente ou où j'interviens régulièrement.</p>
+    <div class="zone-cities" style="gap: 10px; margin-bottom: 32px;">
+      <span class="zone-city">Jujurieux</span>
+      <span class="zone-city">Ambérieu-en-Bugey</span>
+      <span class="zone-city">Bourg-en-Bresse</span>
+      <span class="zone-city">Belley</span>
+      <span class="zone-city">Pérouges</span>
+      <span class="zone-city">Meximieux</span>
+      <span class="zone-city">Hauteville-Lompnes</span>
+      <span class="zone-city">Oyonnax</span>
+      <span class="zone-city">Pont d'Ain</span>
+      <span class="zone-city">Lagnieu</span>
+    </div>
+    <p style="font-size: 13px; color: var(--light-text); font-style: italic; font-family: 'Cormorant Garamond', serif; line-height: 1.7;">Vous êtes dans une commune de l'Ain non listée ? Contactez-moi — j'étudie chaque demande et interviens dans tout le département selon votre situation.</p>
+  </div>
+</section>
+
+<!-- ─── CTA ───────────────────────────────────── -->
+<section style="background: var(--cream); padding: 100px 60px; text-align: center; border-top: 1px solid var(--beige);">
+  <div style="max-width: 600px; margin: 0 auto;">
+    <p class="section-label" style="justify-content: center;">Première étape</p>
+    <h2 class="serif" style="margin-bottom: 20px;">Commencez par un <em>audit gratuit</em></h2>
+    <p style="color: var(--mid); font-size: 15px; line-height: 1.7; max-width: 520px; margin: 0 auto 40px; font-weight: 300;">Je visite votre bien dans l'Ain, j'analyse le marché local et vous remets une estimation personnalisée de vos revenus potentiels — sans aucun engagement de votre part.</p>
+    <a href="contact.html" class="btn-primary">
+      Demander mon audit gratuit
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <a href="index.html" class="footer-logo">Lenora Conciergerie</a>
+      <p class="footer-tagline">Reprenez le contrôle de votre temps. Je transforme votre bien en expérience inoubliable pour vous et vos voyageurs.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/1DVts78FRo/" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/lenora.conciergerie" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html#about">À propos</a></li>
+        <li><a href="services.html">Mes services</a></li>
+        <li><a href="index.html#tarifs">Tarifs</a></li>
+        <li><a href="index.html#avis">Témoignages</a></li>
+        <li><a href="index.html#blog">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Mes services</h4>
+      <ul class="footer-links">
+        <li><a href="services.html">Gestion complète</a></li>
+        <li><a href="services.html#mise-en-service">Mise en service</a></li>
+        <li><a href="services.html">Optimisation d'annonce</a></li>
+        <li><a href="methode.html">Comment ça marche</a></li>
+        <li><a href="ain.html">Conciergerie dans l'Ain</a></li>
+        <li><a href="nord-isere.html">Conciergerie Nord Isère</a></li>
+        <li><a href="est-lyonnais.html">Conciergerie Est Lyonnais</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Me contacter</h4>
+      <div class="footer-contact">
+        <div class="footer-contact-item"><strong>Téléphone</strong><a href="tel:0674398741">06 74 39 87 41</a></div>
+        <div class="footer-contact-item"><strong>Email</strong><a href="mailto:contact@lenora-conciergerie.fr">contact@lenora-conciergerie.fr</a></div>
+        <div class="footer-contact-item"><strong>Basée à</strong>Jujurieux — Ain (01)</div>
+        <div class="footer-contact-item"><strong>Zone</strong>Ain · Nord Isère · Est Lyonnais</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Lenora Conciergerie — Tous droits réservés</span>
+    <div class="footer-legal">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="confidentialite.html">Confidentialité</a>
+      <a href="cgv.html">CGV</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

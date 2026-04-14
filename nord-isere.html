@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conciergerie Nord Isère | Lenora Conciergerie — Gestion Location Saisonnière</title>
+  <meta name="description" content="Conciergerie Nord Isère (38) : gestion location saisonnière à Bourgoin-Jallieu, Crémieu, L'Isle d'Abeau. Proche Lyon, Eurexpo, Saint-Exupéry. Audit gratuit." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://lenora-conciergerie.fr/nord-isere" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Conciergerie Nord Isère | Lenora Conciergerie" />
+  <meta property="og:description" content="Gestion locative saisonnière en Nord Isère : entre Lyon, Eurexpo et l'aéroport Saint-Exupéry, je prends en charge votre bien de A à Z. Réactivité locale garantie." />
+  <meta property="og:url" content="https://lenora-conciergerie.fr/nord-isere" />
+  <meta property="og:image" content="https://lenora-conciergerie.fr/images/og-nord-isere.jpg" />
+  <meta property="og:locale" content="fr_FR" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Lenora Conciergerie","telephone":"+33674398741","email":"contact@lenora-conciergerie.fr","address":{"@type":"PostalAddress","addressLocality":"Jujurieux","postalCode":"01640","addressRegion":"Ain","addressCountry":"FR"},"areaServed":"Nord Isère"}</script>
+</head>
+<body>
+
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">Lenora Conciergerie</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="index.html#about">À propos</a></li>
+    <li>
+      <a href="services.html">Mes services <span class="nav-arrow">&#9662;</span></a>
+      <div class="nav-dropdown">
+        <div class="drop-section">Prestations</div>
+        <a href="services.html">Gestion complète</a>
+        <a href="services.html#mise-en-service">Mise en service</a>
+        <a href="services.html">Optimisation d'annonce</a>
+        <a href="methode.html">Comment ça marche</a>
+        <div class="drop-sep"></div>
+        <a href="index.html#tarifs">Voir les tarifs &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <a href="index.html#zones">Zones <span class="nav-arrow">&#9662;</span></a>
+      <div class="nav-dropdown">
+        <div class="drop-section">Pages locales SEO</div>
+        <a href="ain.html">Conciergerie dans l'Ain</a>
+        <a href="nord-isere.html" class="active">Conciergerie Nord Isère</a>
+        <a href="est-lyonnais.html">Conciergerie Est Lyonnais</a>
+      </div>
+    </li>
+    <li><a href="index.html#tarifs">Tarifs</a></li>
+    <li><a href="index.html#blog">Blog</a></li>
+    <li><a href="contact.html" class="nav-cta">Audit gratuit</a></li>
+  </ul>
+  <button class="nav-hamburger" id="navHamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile-overlay" id="mobileOverlay">
+  <ul class="nav-mobile-links">
+    <li><a href="index.html" onclick="closeMobile()">Accueil</a></li>
+    <li><a href="index.html#about" onclick="closeMobile()">À propos</a></li>
+    <li>
+      <a href="services.html" onclick="toggleMobileSub(event,'sub-services')">
+        Mes services <span class="mobile-chevron" id="chev-services">&#9662;</span>
+      </a>
+      <div class="mobile-sub" id="sub-services">
+        <a href="services.html" onclick="closeMobile()">Gestion complète</a>
+        <a href="services.html#mise-en-service" onclick="closeMobile()">Mise en service</a>
+        <a href="services.html" onclick="closeMobile()">Optimisation d'annonce</a>
+        <a href="methode.html" onclick="closeMobile()">Comment ça marche</a>
+        <a href="index.html#tarifs" onclick="closeMobile()">Voir les tarifs</a>
+      </div>
+    </li>
+    <li>
+      <a href="index.html#zones" onclick="toggleMobileSub(event,'sub-zones')">
+        Zones <span class="mobile-chevron" id="chev-zones">&#9662;</span>
+      </a>
+      <div class="mobile-sub" id="sub-zones">
+        <a href="ain.html" onclick="closeMobile()">Conciergerie dans l'Ain</a>
+        <a href="nord-isere.html" onclick="closeMobile()">Conciergerie Nord Isère</a>
+        <a href="est-lyonnais.html" onclick="closeMobile()">Conciergerie Est Lyonnais</a>
+      </div>
+    </li>
+    <li><a href="index.html#tarifs" onclick="closeMobile()">Tarifs</a></li>
+    <li><a href="index.html#blog" onclick="closeMobile()">Blog</a></li>
+  </ul>
+  <a href="contact.html" class="nav-mobile-cta" onclick="closeMobile()">
+    Audit gratuit
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </a>
+</div>
+
+<!-- ─── HERO ─────────────────────────────────── -->
+<section class="page-hero">
+  <div class="page-hero-content">
+    <p class="hero-eyebrow">Conciergerie · Nord Isère (38)</p>
+    <h1>La conciergerie de <em>référence en Nord Isère</em></h1>
+    <p>À 30 minutes de Lyon, le Nord Isère concentre une demande locative saisonnière portée par les professionnels en déplacement, les salons Eurexpo et le trafic de l'aéroport Lyon Saint-Exupéry. Je gère votre bien de A à Z pour maximiser vos revenus sur ce territoire en pleine croissance.</p>
+  </div>
+</section>
+
+<!-- ─── SECTION 1 — POURQUOI NORD ISÈRE ──────── -->
+<section style="background: var(--cream); padding: 100px 60px;">
+  <div style="max-width: 1120px; margin: 0 auto;">
+    <p class="section-label">Un territoire stratégique</p>
+    <h2 class="serif" style="margin-bottom: 16px;">Pourquoi le Nord Isère est un marché <em>porteur</em></h2>
+    <p style="color: var(--mid); font-size: 15px; line-height: 1.8; max-width: 640px; font-weight: 300; margin-bottom: 64px;">Le Nord Isère bénéficie d'une position géographique exceptionnelle : porte d'entrée des Alpes, couloir entre Lyon et Grenoble, plaque tournante économique avec un parc d'activités parmi les plus denses de la région. La location courte durée y répond à des besoins multiples et pérennes.</p>
+
+    <div class="zones-grid">
+
+      <div class="zone-card">
+        <div class="zone-dept">38</div>
+        <div class="zone-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3>Proximité Lyon &amp; Eurexpo</h3>
+        <p style="font-size: 14px; line-height: 1.75; color: var(--mid); font-weight: 300; margin-bottom: 16px;">À seulement 30 minutes de Lyon par l'A43, le Nord Isère attire chaque année des milliers de voyageurs d'affaires venus pour les grands salons du parc Eurexpo — Sirha, Batimat, Pollutec — ou pour les entreprises du parc industriel de la Plaine de l'Ain. Les séjours professionnels de 2 à 5 nuits génèrent une demande régulière et solvable, avec des prix au nuitée supérieurs à la moyenne régionale durant les périodes de salons.</p>
+        <p style="font-size: 13px; color: var(--light-text); font-style: italic; font-family: 'Cormorant Garamond', serif; line-height: 1.6;">Un bien bien positionné près de L'Isle d'Abeau ou Bourgoin-Jallieu peut afficher un taux d'occupation de 75 % sur les semaines de salons.</p>
+      </div>
+
+      <div class="zone-card">
+        <div class="zone-dept">38</div>
+        <div class="zone-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>Aéroport Lyon Saint-Exupéry</h3>
+        <p style="font-size: 14px; line-height: 1.75; color: var(--mid); font-weight: 300; margin-bottom: 16px;">L'aéroport international Lyon Saint-Exupéry, situé sur la commune de Colombier-Saugnieu en limite du Nord Isère, accueille plus de 12 millions de passagers par an. Équipages, sous-traitants aéronautiques, passagers en correspondance ou en attente de vol — la demande d'hébergement de courte durée est permanente et peu sensible aux aléas touristiques. Les communes de Pont-de-Chéruy, Tignieu-Jameyzieu ou Saint-Chef, à 15–20 minutes de l'aéroport, bénéficient directement de ce flux constant.</p>
+        <p style="font-size: 13px; color: var(--light-text); font-style: italic; font-family: 'Cormorant Garamond', serif; line-height: 1.6;">La demande aéroportuaire génère un socle de réservations à l'année, indépendant de la saisonnalité classique.</p>
+      </div>
+
+      <div class="zone-card">
+        <div class="zone-dept">38</div>
+        <div class="zone-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <h3>Nature, loisirs &amp; week-ends au vert</h3>
+        <p style="font-size: 14px; line-height: 1.75; color: var(--mid); font-weight: 300; margin-bottom: 16px;">Entre le Rhône et les premiers contreforts des Alpes, le Nord Isère offre un cadre naturel préservé très prisé des Lyonnais en quête de dépaysement. La cité médiévale de Crémieu, classée parmi les plus beaux villages de France, les étangs de Morestel, les gorges de l'Ambel, le lac de Paladru à portée — autant d'attraits qui alimentent une clientèle de loisirs weekend toute l'année. Les Avenières et Morestel voient leur offre de location saisonnière croître régulièrement pour répondre à cette demande.</p>
+        <p style="font-size: 13px; color: var(--light-text); font-style: italic; font-family: 'Cormorant Garamond', serif; line-height: 1.6;">Crémieu et les alentours affichent des pics de réservations lors des week-ends de mai à septembre, avec des tarifs en forte progression.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── VILLES COUVERTES ───────────────────────── -->
+<section style="background: var(--warm-white); padding: 80px 60px;">
+  <div style="max-width: 1120px; margin: 0 auto;">
+    <p class="section-label">Couverture géographique</p>
+    <h2 class="serif" style="margin-bottom: 16px;">Les communes <em>couvertes en Nord Isère</em></h2>
+    <p style="color: var(--mid); font-size: 15px; line-height: 1.8; max-width: 600px; font-weight: 300; margin-bottom: 40px;">J'interviens dans tout le Nord Isère pour la gestion de vos locations saisonnières. Voici les principales communes où je suis présente ou interviens régulièrement.</p>
+    <div class="zone-cities" style="gap: 10px; margin-bottom: 32px;">
+      <span class="zone-city">Bourgoin-Jallieu</span>
+      <span class="zone-city">La Tour-du-Pin</span>
+      <span class="zone-city">Pont-de-Chéruy</span>
+      <span class="zone-city">Morestel</span>
+      <span class="zone-city">Crémieu</span>
+      <span class="zone-city">Les Avenières</span>
+      <span class="zone-city">L'Isle d'Abeau</span>
+      <span class="zone-city">Ruy-Montceau</span>
+      <span class="zone-city">Saint-Chef</span>
+      <span class="zone-city">Tignieu-Jameyzieu</span>
+    </div>
+    <p style="font-size: 13px; color: var(--light-text); font-style: italic; font-family: 'Cormorant Garamond', serif; line-height: 1.7;">Vous êtes dans une commune du Nord Isère non listée ? Contactez-moi — j'étudie chaque demande et interviens dans toute la zone selon votre situation.</p>
+  </div>
+</section>
+
+<!-- ─── SECTION 2 — SERVICES EN NORD ISÈRE ────── -->
+<section style="background: var(--cream); padding: 100px 60px;">
+  <div style="max-width: 1120px; margin: 0 auto;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 56px; gap: 40px; flex-wrap: wrap;">
+      <div>
+        <p class="section-label">Ce que je fais pour vous en Nord Isère</p>
+        <h2 class="serif">Mes services de <em>gestion locative</em></h2>
+      </div>
+      <p style="max-width: 380px; font-size: 15px; line-height: 1.8; color: var(--mid); font-weight: 300;">Une prise en charge complète de votre location saisonnière en Nord Isère, adaptée aux flux professionnels et touristiques du territoire.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-num">01</div>
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3>Présence en ligne optimisée</h3>
+        <p class="service-sub-label">Visibilité maximale en Nord Isère</p>
+        <ul class="service-list">
+          <li>Création ou refonte d'annonce avec mots-clés locaux Nord Isère</li>
+          <li>Mise en avant des atouts : proximité Lyon, aéroport, Eurexpo</li>
+          <li>Diffusion sur Airbnb, Booking, VRBO et autres plateformes</li>
+          <li>Tarification dynamique calée sur le calendrier des salons</li>
+          <li>Synchronisation multi-plateformes et gestion du calendrier</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">02</div>
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Accueil des voyageurs</h3>
+        <p class="service-sub-label">Expérience soignée pour chaque profil</p>
+        <ul class="service-list">
+          <li>Check-in autonome ou physique selon vos préférences</li>
+          <li>Guide de bienvenue avec bonnes adresses locales</li>
+          <li>Communication 7j/7 avec les voyageurs</li>
+          <li>Accueil adapté aux voyageurs d'affaires (arrivée tardive, flexibilité)</li>
+          <li>Résolution des imprévus avec réactivité locale</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">03</div>
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Intendance &amp; entretien</h3>
+        <p class="service-sub-label">Sérénité totale entre chaque séjour</p>
+        <ul class="service-list">
+          <li>Ménage professionnel entre chaque séjour</li>
+          <li>Fourniture et renouvellement du linge de qualité</li>
+          <li>Vérification et inventaire après chaque départ</li>
+          <li>Réapprovisionnement des consommables</li>
+          <li>Signalement et suivi des réparations avec artisans locaux</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">04</div>
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <h3>Optimisation de revenus</h3>
+        <p class="service-sub-label">Maximisation sur le marché Nord Isère</p>
+        <ul class="service-list">
+          <li>Analyse comparative du marché locatif nord-isérois</li>
+          <li>Tarification événementielle (salons, foires, marchés de Noël…)</li>
+          <li>Stratégie de remplissage aux périodes creuses</li>
+          <li>Reporting mensuel détaillé de vos revenus</li>
+          <li>Conseils pour améliorer classement et notes</li>
+        </ul>
+      </div>
+
+      <div class="service-card service-card-wide">
+        <div class="service-num">05</div>
+        <div>
+          <h3>Mise en service complète en Nord Isère</h3>
+          <p class="service-sub-label">Démarrage clé en main</p>
+          <ul class="service-list">
+            <li>Audit complet du logement et recommandations</li>
+            <li>Mise aux normes décoration et équipements selon le profil des voyageurs locaux</li>
+            <li>Création du dossier réglementaire (déclaration en mairie)</li>
+            <li>Shooting photo professionnel valorisant votre cadre</li>
+            <li>Rédaction et publication de l'annonce optimisée</li>
+          </ul>
+        </div>
+        <div class="wide-right">
+          <p>Vous avez un bien en Nord Isère prêt à être loué mais ne savez pas par où commencer ? Basée à Jujurieux dans l'Ain, j'interviens rapidement sur toute la zone Nord Isère. Je prends en charge l'intégralité du démarrage : de l'audit initial à la première réservation. Vous recevez un rapport complet avec les actions prioritaires et une estimation réaliste de vos revenus potentiels sur le marché nord-isérois.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA ───────────────────────────────────── -->
+<section style="background: var(--cream); padding: 100px 60px; text-align: center; border-top: 1px solid var(--beige);">
+  <div style="max-width: 600px; margin: 0 auto;">
+    <p class="section-label" style="justify-content: center;">Première étape</p>
+    <h2 class="serif" style="margin-bottom: 20px;">Commencez par un <em>audit gratuit</em></h2>
+    <p style="color: var(--mid); font-size: 15px; line-height: 1.7; max-width: 520px; margin: 0 auto 40px; font-weight: 300;">Je visite votre bien en Nord Isère, j'analyse le marché local et vous remets une estimation personnalisée de vos revenus potentiels — sans aucun engagement de votre part.</p>
+    <a href="contact.html" class="btn-primary">
+      Demander mon audit gratuit
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <a href="index.html" class="footer-logo">Lenora Conciergerie</a>
+      <p class="footer-tagline">Reprenez le contrôle de votre temps. Je transforme votre bien en expérience inoubliable pour vous et vos voyageurs.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/1DVts78FRo/" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/lenora.conciergerie" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html#about">À propos</a></li>
+        <li><a href="services.html">Mes services</a></li>
+        <li><a href="index.html#tarifs">Tarifs</a></li>
+        <li><a href="index.html#avis">Témoignages</a></li>
+        <li><a href="index.html#blog">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Mes services</h4>
+      <ul class="footer-links">
+        <li><a href="services.html">Gestion complète</a></li>
+        <li><a href="services.html#mise-en-service">Mise en service</a></li>
+        <li><a href="services.html">Optimisation d'annonce</a></li>
+        <li><a href="methode.html">Comment ça marche</a></li>
+        <li><a href="ain.html">Conciergerie dans l'Ain</a></li>
+        <li><a href="nord-isere.html">Conciergerie Nord Isère</a></li>
+        <li><a href="est-lyonnais.html">Conciergerie Est Lyonnais</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Me contacter</h4>
+      <div class="footer-contact">
+        <div class="footer-contact-item"><strong>Téléphone</strong><a href="tel:0674398741">06 74 39 87 41</a></div>
+        <div class="footer-contact-item"><strong>Email</strong><a href="mailto:contact@lenora-conciergerie.fr">contact@lenora-conciergerie.fr</a></div>
+        <div class="footer-contact-item"><strong>Basée à</strong>Jujurieux — Ain (01)</div>
+        <div class="footer-contact-item"><strong>Zone</strong>Ain · Nord Isère · Est Lyonnais</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Lenora Conciergerie — Tous droits réservés</span>
+    <div class="footer-legal">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="confidentialite.html">Confidentialité</a>
+      <a href="cgv.html">CGV</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
