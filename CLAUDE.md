@@ -50,6 +50,10 @@ Branche active : `claude/code-review-GVMIm` → à merger dans `main` après val
 - WhatsApp : https://wa.me/33674398741 (bouton flottant `.whatsapp-float` sur toutes les pages)
 - SIRET : 79348974100025
 
+## Préférences de travail
+- Toujours lancer des agents (Agent tool) et sous-agents pour exécuter les tâches — paralléliser au maximum
+- Utiliser `/compact` (skill) pour comprimer le contexte quand les tokens montent
+
 ## Actions restantes côté Leslye (client)
 1. Créer compte Formspree → coller l'ID dans `action="https://formspree.io/f/ID"` (toutes les pages avec formulaire)
 2. Connecter le repo GitHub à Vercel, configurer domaine `lenora-conciergerie.fr`
