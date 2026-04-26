@@ -484,12 +484,12 @@ h2.serif em { font-style: italic; color: var(--copper); }
   position: relative; transition: transform 0.3s, box-shadow 0.3s;
 }
 .testimonial-card:hover { transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.07); }
-.testimonial-card.featured { grid-row: span 2; background: var(--copper); }
-.testimonial-card.featured .testimonial-text { color: rgba(255,255,255,0.9); font-size: 18px; }
-.testimonial-card.featured .testimonial-name { color: #fff; }
-.testimonial-card.featured .testimonial-role { color: rgba(255,255,255,0.6); }
-.testimonial-card.featured .quote-mark { color: rgba(255,255,255,0.5); }
-.testimonial-card.featured .author-avatar { background: rgba(255,255,255,0.15); color: #fff; }
+.testimonial-card.featured { background: var(--lys); border-left: 3px solid var(--copper); }
+.testimonial-card.featured .testimonial-text { color: var(--charcoal); font-size: 17px; }
+.testimonial-card.featured .testimonial-name { color: var(--forest); }
+.testimonial-card.featured .testimonial-role { color: var(--mid); }
+.testimonial-card.featured .quote-mark { color: var(--copper); }
+.testimonial-card.featured .author-avatar { background: rgba(255,255,255,0.6); color: var(--forest); }
 .quote-mark { font-family: 'Cormorant Garamond', serif; font-size: 80px; line-height: 0.6; color: var(--copper); opacity: 0.35; margin-bottom: 24px; display: block; }
 .stars { color: var(--copper); font-size: 13px; letter-spacing: 3px; margin-bottom: 20px; }
 .testimonial-text { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-style: italic; line-height: 1.7; color: #5A5044; margin-bottom: 28px; }
@@ -709,7 +709,7 @@ footer { background: var(--charcoal); padding: 64px 60px 32px; }
 
   .testimonials { padding: 80px 32px; }
   .testimonials-grid { grid-template-columns: 1fr; }
-  .testimonial-card.featured { grid-row: span 1; }
+  .testimonial-card.featured { border-left: 3px solid var(--copper); }
 
   .tarifs { padding: 80px 32px; }
   .tarifs-grid { grid-template-columns: 1fr 1fr; }
