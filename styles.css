@@ -504,7 +504,42 @@ h2.serif em { font-style: italic; color: var(--copper); }
 
 /* ─── TARIFS ────────────────────────────────── */
 .tarifs { background: var(--forest); padding: 100px 60px; }
-.tarifs-header { text-align: center; margin-bottom: 64px; }
+.tarifs-header { text-align: center; margin-bottom: 56px; }
+
+.tarif-offer {
+  max-width: 680px; margin: 0 auto; text-align: center;
+  display: flex; flex-direction: column; align-items: center; gap: 32px;
+}
+.tarif-offer-price {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+}
+.tarif-offer-from {
+  font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: rgba(255,255,255,0.4); font-family: 'DM Sans', sans-serif;
+}
+.tarif-offer-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(64px, 10vw, 96px); font-weight: 300; line-height: 1;
+  color: var(--copper-light);
+}
+.tarif-offer-number small {
+  font-size: 0.38em; color: rgba(255,255,255,0.5);
+  font-family: 'DM Sans', sans-serif; font-weight: 300; vertical-align: middle;
+}
+.tarif-offer-base {
+  font-size: 13px; color: rgba(255,255,255,0.4); letter-spacing: 0.06em;
+}
+.tarif-offer-sep {
+  width: 40px; height: 1px; background: rgba(184,134,92,0.4);
+}
+.tarif-offer-text p {
+  font-size: 15px; line-height: 1.8; color: rgba(255,255,255,0.55);
+  font-weight: 300; margin-bottom: 10px;
+}
+.tarif-offer-text p:last-child {
+  font-style: italic; font-family: 'Cormorant Garamond', serif;
+  font-size: 16px; color: rgba(255,255,255,0.35); margin-bottom: 0;
+}
 .tarifs-header .section-label { justify-content: center; color: var(--copper-light); }
 .tarifs-header .section-label::before { background: var(--copper-light); }
 .tarifs-header h2 { color: var(--warm-white); }
