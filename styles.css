@@ -1,6 +1,7 @@
 /* ─── VARIABLES & RESET ─────────────────────── */
 :root {
-  --forest: #283828;
+  --forest: #3B2C22;
+  --lys: #C4AD8E;
   --copper: #B8865C;
   --copper-light: #D4A679;
   --cream: #F9F5EE;
@@ -34,10 +35,19 @@ nav.scrolled {
 .nav-logo { display: flex; align-items: center; text-decoration: none; }
 .nav-logo img {
   height: 62px; width: auto;
-  filter: brightness(0) invert(1);
-  transition: filter 0.4s;
 }
-nav.scrolled .nav-logo img { filter: none; }
+.nav-logo-tagline {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--copper-light);
+  opacity: 0.85;
+  line-height: 1;
+  margin-top: 3px;
+}
+nav.scrolled .nav-logo-tagline { color: var(--mid); opacity: 1; }
 .nav-phone {
   display: flex; align-items: center; gap: 6px;
   font-size: 12px; letter-spacing: 0.05em;
@@ -150,7 +160,7 @@ nav.scrolled .nav-hamburger span { background: var(--forest); }
 }
 .hero-bg {
   position: absolute; inset: 0;
-  background: linear-gradient(160deg, #3D4F3A 0%, #1E2A1C 50%, #2C3B2D 100%);
+  background: linear-gradient(160deg, #4A3526 0%, #2A1B10 50%, #3C2818 100%);
 }
 .hero-bg::before {
   content: ''; position: absolute; inset: 0;
@@ -166,8 +176,8 @@ nav.scrolled .nav-hamburger span { background: var(--forest); }
 }
 .hero-image-block::before {
   content: ''; position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(to right, #2C3B2D 0%, transparent 40%),
-              linear-gradient(to top, #1E2A1C 0%, transparent 30%);
+  background: linear-gradient(to right, #3C2818 0%, transparent 40%),
+              linear-gradient(to top, #2A1B10 0%, transparent 30%);
 }
 .hero-img-ph {
   width: 100%; height: 100%;
@@ -247,7 +257,7 @@ nav.scrolled .nav-hamburger span { background: var(--forest); }
 /* ─── PAGE HERO (inner pages) ───────────────── */
 .page-hero {
   position: relative;
-  background: linear-gradient(160deg, #3D4F3A 0%, #1E2A1C 50%, #2C3B2D 100%);
+  background: linear-gradient(160deg, #4A3526 0%, #2A1B10 50%, #3C2818 100%);
   padding: 160px 60px 80px; overflow: hidden;
 }
 .page-hero::before {
@@ -548,7 +558,7 @@ h2.serif em { font-style: italic; color: var(--copper); }
 .blog-card { background: var(--cream); overflow: hidden; border-radius: 2px; transition: transform 0.3s, box-shadow 0.3s; }
 .blog-card:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,0.08); }
 .blog-thumb {
-  height: 180px; background: linear-gradient(135deg, #3D4F3A, #283828);
+  height: 180px; background: linear-gradient(135deg, #4A3526, #3B2C22);
   display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 8px;
   color: rgba(255,255,255,0.2); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
 }
@@ -568,7 +578,7 @@ h2.serif em { font-style: italic; color: var(--copper); }
 /* ─── CONTACT ────────────────────────────────── */
 .contact-section { background: var(--cream); padding: 0 60px 100px; }
 .contact-inner {
-  background: linear-gradient(135deg, var(--forest) 0%, #1E2E1E 100%);
+  background: linear-gradient(135deg, var(--forest) 0%, #140D06 100%);
   border-radius: 4px; padding: 80px;
   display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
   position: relative; overflow: hidden;
@@ -602,7 +612,7 @@ h2.serif em { font-style: italic; color: var(--copper); }
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='white' stroke-opacity='0.35' stroke-width='1.5'/%3E%3C/svg%3E");
   background-repeat: no-repeat; background-position: right 16px center;
 }
-.form-input option { background: #283828; }
+.form-input option { background: var(--forest); }
 .btn-form {
   width: 100%; background: var(--copper); color: #fff; border: none;
   padding: 16px; font-family: 'DM Sans', sans-serif; font-size: 12px;
