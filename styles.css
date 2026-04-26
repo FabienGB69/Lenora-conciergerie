@@ -179,17 +179,10 @@ nav.scrolled .nav-hamburger span { background: var(--forest); }
   background: linear-gradient(to right, #3C2818 0%, transparent 40%),
               linear-gradient(to top, #2A1B10 0%, transparent 30%);
 }
-.hero-img-ph {
+.hero-property-img {
   width: 100%; height: 100%;
-  display: flex; align-items: center; justify-content: center;
-}
-.hero-portrait-img {
-  width: min(80%, 380px); height: min(80%, 380px);
-  object-fit: cover; object-position: center top;
-  border-radius: 50%;
-  border: 2px solid rgba(184,134,92,.35);
-  position: relative; z-index: 2;
-  filter: brightness(1.05) contrast(1.02);
+  object-fit: cover; object-position: center;
+  display: block;
 }
 
 .hero-content {
