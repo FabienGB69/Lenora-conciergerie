@@ -354,15 +354,17 @@ h2.serif em { font-style: italic; color: var(--copper); }
 .about-name-story p { font-family: 'Cormorant Garamond', serif; font-size: 17px; line-height: 1.75; color: var(--mid); font-style: italic; }
 .about-name-story strong { font-style: normal; color: var(--forest); }
 .about-formation {
-  background: var(--forest); border-radius: 4px; padding: 24px;
+  background: rgba(184,134,92,0.15); border-radius: 4px; padding: 24px;
   margin-top: 28px; display: flex; gap: 16px; align-items: flex-start;
+  border-left: 3px solid var(--copper);
 }
 .formation-icon {
-  width: 42px; height: 42px; background: rgba(255,255,255,0.1); border-radius: 50%;
+  width: 42px; height: 42px; background: rgba(184,134,92,0.15); border-radius: 50%;
   flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+  color: var(--copper);
 }
-.formation-text { font-size: 13px; line-height: 1.7; color: rgba(255,255,255,0.6); }
-.formation-text strong { color: var(--copper-light); display: block; margin-bottom: 4px; font-size: 14px; }
+.formation-text { font-size: 13px; line-height: 1.7; color: var(--mid); }
+.formation-text strong { color: var(--charcoal); display: block; margin-bottom: 4px; font-size: 14px; }
 /* ─── SERVICES ──────────────────────────────── */
 .services { background: var(--warm-white); padding: 100px 60px; }
 .services-header {
@@ -396,11 +398,11 @@ h2.serif em { font-style: italic; color: var(--copper); }
 .service-list li { font-size: 14px; color: var(--mid); display: flex; align-items: flex-start; gap: 10px; line-height: 1.5; font-weight: 300; }
 .service-list li::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background: var(--copper); flex-shrink: 0; margin-top: 7px; }
 .service-card-wide {
-  grid-column: span 3; background: var(--forest);
+  grid-column: span 3; background: var(--copper);
   display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
   padding: 56px 60px; transition: background 0.3s;
 }
-.service-card-wide:hover { background: #2E4430; }
+.service-card-wide:hover { background: #A97040; }
 .service-card-wide::before { top: 0; bottom: auto; height: 2px; background: var(--copper-light); }
 .service-card-wide .service-num { color: rgba(255,255,255,0.04); }
 .service-card-wide h3 { color: var(--warm-white); font-size: 30px; }
@@ -482,12 +484,12 @@ h2.serif em { font-style: italic; color: var(--copper); }
   position: relative; transition: transform 0.3s, box-shadow 0.3s;
 }
 .testimonial-card:hover { transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.07); }
-.testimonial-card.featured { grid-row: span 2; background: var(--forest); }
-.testimonial-card.featured .testimonial-text { color: rgba(255,255,255,0.8); font-size: 18px; }
-.testimonial-card.featured .testimonial-name { color: var(--warm-white); }
-.testimonial-card.featured .testimonial-role { color: rgba(255,255,255,0.4); }
-.testimonial-card.featured .quote-mark { color: var(--copper-light); }
-.testimonial-card.featured .author-avatar { background: rgba(255,255,255,0.1); color: var(--copper-light); }
+.testimonial-card.featured { grid-row: span 2; background: var(--copper); }
+.testimonial-card.featured .testimonial-text { color: rgba(255,255,255,0.9); font-size: 18px; }
+.testimonial-card.featured .testimonial-name { color: #fff; }
+.testimonial-card.featured .testimonial-role { color: rgba(255,255,255,0.6); }
+.testimonial-card.featured .quote-mark { color: rgba(255,255,255,0.5); }
+.testimonial-card.featured .author-avatar { background: rgba(255,255,255,0.15); color: #fff; }
 .quote-mark { font-family: 'Cormorant Garamond', serif; font-size: 80px; line-height: 0.6; color: var(--copper); opacity: 0.35; margin-bottom: 24px; display: block; }
 .stars { color: var(--copper); font-size: 13px; letter-spacing: 3px; margin-bottom: 20px; }
 .testimonial-text { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-style: italic; line-height: 1.7; color: #5A5044; margin-bottom: 28px; }
