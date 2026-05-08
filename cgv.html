@@ -10,11 +10,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <!-- Vercel Web Analytics -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 
 <nav id="mainNav">
-  <a href="index.html" class="nav-logo"><img src="images/logo-text.png" alt="Lenora Conciergerie"></a>
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo-text.png" alt="Lenora Conciergerie">
+    <span class="nav-logo-tagline">Conciergerie locative</span>
+  </a>
   <ul class="nav-links">
     <li><a href="index.html">Accueil</a></li>
     <li><a href="index.html#about">À propos</a></li>
@@ -39,7 +47,7 @@
         <a href="est-lyonnais.html">Conciergerie Est Lyonnais</a>
       </div>
     </li>
-    <li><a href="index.html#tarifs">Tarifs</a></li>
+    <li><a href="index.html#tarifs">Tarif</a></li>
     <li><a href="index.html#blog">Blog</a></li>
     <li><a href="tel:+33674398741" class="nav-phone"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>06 74 39 87 41</a></li>
     <li><a href="contact.html" class="nav-cta">Audit gratuit</a></li>
@@ -74,7 +82,7 @@
         <a href="est-lyonnais.html" onclick="closeMobile()">Conciergerie Est Lyonnais</a>
       </div>
     </li>
-    <li><a href="index.html#tarifs" onclick="closeMobile()">Tarifs</a></li>
+    <li><a href="index.html#tarifs" onclick="closeMobile()">Tarif</a></li>
     <li><a href="index.html#blog" onclick="closeMobile()">Blog</a></li>
   </ul>
   <a href="contact.html" class="nav-mobile-cta" onclick="closeMobile()">
@@ -258,7 +266,7 @@
         <li><a href="index.html">Accueil</a></li>
         <li><a href="index.html#about">À propos</a></li>
         <li><a href="services.html">Mes services</a></li>
-        <li><a href="index.html#tarifs">Tarifs</a></li>
+        <li><a href="index.html#tarifs">Tarif</a></li>
         <li><a href="index.html#avis">Témoignages</a></li>
         <li><a href="index.html#blog">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -294,6 +302,7 @@
       <a href="cgv.html">CGV</a>
     </div>
   </div>
+  <div class="footer-pixeloria">Créé avec ❤️ par <a href="https://pixeloria.fr" target="_blank" rel="noopener">Pixeloria</a></div>
 </footer>
 <script src="script.js"></script>
 

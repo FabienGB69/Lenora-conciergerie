@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lenora Conciergerie | Gestion Locative Courte Durée — Ain, Nord Isère, Est Lyonnais</title>
-  <meta name="description" content="Conciergerie spécialisée en location courte durée dans l'Ain, le Nord Isère et l'Est Lyonnais. Je gère votre bien de A à Z : annonce, accueil voyageurs, ménage, maintenance. Audit gratuit." />
+  <meta name="description" content="Conciergerie spécialisée en location courte durée dans l'Ain, le Nord Isère et l'Est Lyonnais. Annonce, accueil voyageurs, ménage, maintenance — une gestion complète et rigoureuse. Audit gratuit." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://lenora-conciergerie.fr/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Lenora Conciergerie | Gestion Locative — Ain, Nord Isère, Est Lyonnais" />
-  <meta property="og:description" content="Conciergerie haut de gamme pour votre location saisonnière. De l'annonce au check-out, je m'occupe de tout." />
+  <meta property="og:description" content="Conciergerie locative pour votre location saisonnière. De l'annonce au check-out, je prends en charge chaque étape." />
   <meta property="og:url" content="https://lenora-conciergerie.fr/" />
   <meta property="og:image" content="https://lenora-conciergerie.fr/images/og-accueil.jpg" />
   <meta property="og:locale" content="fr_FR" />
@@ -19,6 +19,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <!-- Vercel Web Analytics -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -51,7 +56,10 @@
 <body>
 
 <nav id="mainNav">
-  <a href="index.html" class="nav-logo"><img src="images/logo-text.png" alt="Lenora Conciergerie"></a>
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo-text.png" alt="Lenora Conciergerie">
+    <span class="nav-logo-tagline">Conciergerie locative</span>
+  </a>
   <ul class="nav-links">
     <li><a href="index.html" class="active">Accueil</a></li>
     <li><a href="#about">À propos</a></li>
@@ -76,7 +84,7 @@
         <a href="est-lyonnais.html">Conciergerie Est Lyonnais</a>
       </div>
     </li>
-    <li><a href="#tarifs">Tarifs</a></li>
+    <li><a href="#tarifs">Tarif</a></li>
     <li><a href="#blog">Blog</a></li>
     <li><a href="tel:+33674398741" class="nav-phone"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>06 74 39 87 41</a></li>
     <li><a href="contact.html" class="nav-cta">Audit gratuit</a></li>
@@ -112,7 +120,7 @@
         <a href="est-lyonnais.html" onclick="closeMobile()">Conciergerie Est Lyonnais</a>
       </div>
     </li>
-    <li><a href="#tarifs" onclick="closeMobile()">Tarifs</a></li>
+    <li><a href="#tarifs" onclick="closeMobile()">Tarif</a></li>
     <li><a href="#blog" onclick="closeMobile()">Blog</a></li>
   </ul>
   <a href="contact.html" class="nav-mobile-cta" onclick="closeMobile()">
@@ -123,14 +131,12 @@
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-image-block">
-    <div class="hero-img-ph">
-      <img src="images/leslye-portrait.jpg" alt="Leslye, fondatrice de Lenora Conciergerie" class="hero-portrait-img">
-    </div>
+    <img src="images/hero-property.jpg" alt="Logement chaleureux géré par Lenora Conciergerie" class="hero-property-img">
   </div>
   <div class="hero-content">
-    <p class="hero-eyebrow">Conciergerie locative · Ain &amp; Isère</p>
-    <h1>Faites de votre bien<br>une <em>expérience inoubliable.</em><br><strong>Sans sacrifier votre temps</strong><br>ou votre charge mentale.</h1>
-    <p class="hero-sub">Je m'occupe de tout — annonce, réservations, accueil des voyageurs, ménage, maintenance. Vous profitez de vos revenus, sans la contrainte du quotidien.</p>
+    <p class="hero-eyebrow">Conciergerie locative — Ain · Nord Isère · Est Lyonnais</p>
+    <h1>Faites de votre bien<br>une <em>source de revenus sereine.</em><br><strong>Sans sacrifier votre temps</strong><br>ou votre charge mentale.</h1>
+    <p class="hero-sub">Je prends en charge votre location saisonnière — annonce, réservations, accueil des voyageurs, ménage, maintenance. Vous percevez vos revenus locatifs, libéré des contraintes du quotidien.</p>
     <div class="hero-actions">
       <a href="contact.html" class="btn-primary">
         Demander mon audit gratuit
@@ -171,14 +177,16 @@
     <p class="section-label">À propos</p>
     <h2 class="serif">Derrière Lenora,<br><em>Leslye vous accompagne</em></h2>
     <p class="about-intro">« J'ai construit cette conciergerie avec les mêmes valeurs qui ont guidé toute ma vie professionnelle : l'écoute, la rigueur et l'attention sincère aux personnes. »</p>
-    <p class="about-body">Après plusieurs années à accompagner des familles en tant qu'assistante maternelle, j'ai décidé de mettre mon sens de l'organisation et ma bienveillance au service d'un nouveau projet — la gestion de locations saisonnières.</p>
+    <p class="about-body">Après plusieurs années à accompagner des familles en tant qu'assistante maternelle, j'ai choisi de mettre mon sens de l'organisation et ma rigueur au service de la gestion de locations saisonnières — un secteur où l'attention aux personnes et la réactivité font une vraie différence.</p>
     <div class="about-name-story">
-      <p>J'ai choisi de nommer ma conciergerie <strong>d'après le prénom de ma fille, Lenora</strong>. Ce nom, c'est un engagement personnel : je gère votre bien avec le même soin et la même tendresse que je lui porte chaque jour. Ce n'est pas juste un service — c'est une promesse.</p>
+      <p><strong>Lenora est un nom qui porte une histoire personnelle et des valeurs fortes.</strong></p>
+      <p>Il est né de la combinaison des prénoms de mes deux enfants — un ancrage personnel qui reflète mes valeurs d'engagement, de confiance et d'attention aux détails.</p>
+      <p>À travers Lenora Conciergerie, j'ai souhaité créer une structure à taille humaine, où chaque propriétaire bénéficie d'un accompagnement sérieux, clair et personnalisé.</p>
     </div>
-    <p class="about-body">Basée à Jujurieux dans l'Ain, j'interviens dans un périmètre soigneusement délimité pour garantir la réactivité et la proximité que vous méritez vraiment.</p>
+    <p class="about-body">Basée à Jujurieux dans l'Ain, j'interviens dans un périmètre soigneusement délimité pour garantir une réactivité concrète et une vraie proximité avec chaque bien que je gère.</p>
     <div class="about-formation">
       <div class="formation-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
         </svg>
       </div>
@@ -195,7 +203,7 @@
       <p class="section-label">Mes services</p>
       <h2 class="serif">Une gestion complète,<br><em>de A à Z</em></h2>
     </div>
-    <p class="services-sub">Une seule offre structurée pour tout gérer — de la mise en ligne de votre annonce jusqu'à la remise en état impeccable après chaque séjour.</p>
+    <p class="services-sub">Une seule offre structurée pour tout gérer — de la mise en ligne de votre annonce jusqu'à la remise en état soignée après chaque séjour.</p>
   </div>
   <div class="services-grid">
     <div class="service-card">
@@ -290,7 +298,7 @@
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#283828" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
       </div>
       <h4>Pendant le séjour</h4>
-      <p>J'accueille vos voyageurs chaleureusement et reste disponible pour toute assistance durant leur séjour.</p>
+      <p>Vos voyageurs bénéficient d'un accueil chaleureux et d'un suivi attentif, avec une présence adaptée selon les besoins.</p>
     </div>
     <div class="process-step">
       <div class="step-circle">
@@ -298,7 +306,7 @@
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#283828" stroke-width="1.5"><polyline points="9,11 12,14 22,4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
       </div>
       <h4>Après le séjour</h4>
-      <p>Contrôle qualité, nettoyage professionnel et remise en état impeccable — prêt pour le prochain voyageur.</p>
+      <p>Contrôle qualité, nettoyage professionnel et remise en état soignée — votre bien est prêt pour le prochain voyageur.</p>
     </div>
   </div>
 </section>
@@ -374,8 +382,8 @@
       <div class="testimonial-author">
         <div class="author-avatar">N</div>
         <div>
-          <div class="testimonial-name">Nathalie B.</div>
-          <div class="testimonial-role">Propriétaire d'un T3 · Ambérieu-en-Bugey, Ain</div>
+          <div class="testimonial-name">Nathalie D.</div>
+          <div class="testimonial-role">Propriétaire · Lagnieu, Ain</div>
         </div>
       </div>
     </div>
@@ -386,8 +394,8 @@
       <div class="testimonial-author">
         <div class="author-avatar">J</div>
         <div>
-          <div class="testimonial-name">Johanna R.</div>
-          <div class="testimonial-role">Propriétaire · Est Lyonnais</div>
+          <div class="testimonial-name">Johanna C.</div>
+          <div class="testimonial-role">Propriétaire · Saint-Jean-le-Vieux, Ain</div>
         </div>
       </div>
     </div>
@@ -398,8 +406,8 @@
       <div class="testimonial-author">
         <div class="author-avatar">J</div>
         <div>
-          <div class="testimonial-name">Juliette M.</div>
-          <div class="testimonial-role">Propriétaire d'une maison · Nord Isère</div>
+          <div class="testimonial-name">Juliette S.</div>
+          <div class="testimonial-role">Propriétaire · Ambérieu-en-Bugey, Ain</div>
         </div>
       </div>
     </div>
@@ -410,8 +418,8 @@
       <div class="testimonial-author">
         <div class="author-avatar">M</div>
         <div>
-          <div class="testimonial-name">Marylin D.</div>
-          <div class="testimonial-role">Propriétaire d'un T2 · Jujurieux, Ain</div>
+          <div class="testimonial-name">Marylin B.</div>
+          <div class="testimonial-role">Propriétaire · Vertrieu, Isère</div>
         </div>
       </div>
     </div>
@@ -420,51 +428,26 @@
 
 <section class="tarifs" id="tarifs">
   <div class="tarifs-header">
-    <p class="section-label">Tarifs</p>
-    <h2 class="serif">Une tarification<br><em>claire et transparente</em></h2>
+    <p class="section-label">Tarif</p>
+    <h2 class="serif">Une offre claire,<br><em>adaptée à votre logement</em></h2>
     <p>Je travaille à la commission sur les revenus générés : mes intérêts sont directement alignés avec les vôtres. Plus votre bien performe, mieux je travaille.</p>
   </div>
-  <div class="tarifs-grid">
-    <div class="tarif-card">
-      <div class="tarif-name">Gestion en ligne</div>
-      <h3>Visibilité &amp; Optimisation</h3>
-      <div class="tarif-price"><span>à partir de</span>8<small> % des revenus</small></div>
-      <p class="tarif-desc">Idéal pour les propriétaires qui gèrent eux-mêmes les séjours mais souhaitent maximiser leur visibilité et leurs revenus sur les plateformes.</p>
-      <ul class="tarif-list">
-        <li>Audit et optimisation de l'annonce</li>
-        <li>Tarification dynamique</li>
-        <li>Gestion du calendrier</li>
-        <li>Communication pré-séjour</li>
-      </ul>
+  <div class="tarif-offer">
+    <div class="tarif-offer-price">
+      <span class="tarif-offer-from">À partir de</span>
+      <strong class="tarif-offer-number">24<small>&nbsp;% TTC</small></strong>
+      <span class="tarif-offer-base">des revenus locatifs générés</span>
     </div>
-    <div class="tarif-card highlight">
-      <div class="tarif-recommended">Le plus choisi</div>
-      <div class="tarif-name">Gestion complète</div>
-      <h3>Tout inclus</h3>
-      <div class="tarif-price"><span>à partir de</span>18<small> % des revenus</small></div>
-      <p class="tarif-desc">La solution pour les propriétaires qui souhaitent déléguer l'intégralité de la gestion locative, sans exception et sans compromis.</p>
-      <ul class="tarif-list">
-        <li>Tout ce qui est inclus dans "En ligne"</li>
-        <li>Accueil et départ des voyageurs</li>
-        <li>Ménage et blanchisserie professionnelle</li>
-        <li>Maintenance et suivi du bien</li>
-        <li>Kit et guide de bienvenue</li>
-      </ul>
+    <div class="tarif-offer-sep"></div>
+    <div class="tarif-offer-text">
+      <p>Chaque bien étant différent, un échange personnalisé permet de définir précisément les besoins, les services adaptés et les conditions d'accompagnement.</p>
+      <p>Aucun engagement avant votre accord — le tarif définitif est établi lors de l'audit gratuit, en fonction de votre bien et de vos objectifs.</p>
     </div>
-    <div class="tarif-card">
-      <div class="tarif-name">Mise en service</div>
-      <h3>Lancement optimal</h3>
-      <div class="tarif-price"><span>prestation ponctuelle</span>Sur devis</div>
-      <p class="tarif-desc">Prestation unique recommandée avant la première mise en location pour maximiser l'attractivité et le taux de réservation dès le départ.</p>
-      <ul class="tarif-list">
-        <li>Séance photo professionnelle</li>
-        <li>Ménage de lancement complet</li>
-        <li>Stratégie de positionnement tarifaire</li>
-        <li>Estimation des revenus potentiels</li>
-      </ul>
-    </div>
+    <a href="contact.html" class="btn-primary">
+      Demander une estimation personnalisée
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
   </div>
-  <p class="tarifs-note">Les taux indiqués sont des fourchettes indicatives — le tarif définitif est établi lors de l'audit gratuit, en fonction de votre bien et de vos objectifs. Aucun engagement avant votre accord.</p>
 </section>
 
 <section class="blog" id="blog">
@@ -725,7 +708,7 @@
   <div class="footer-top">
     <div>
       <a href="index.html" class="footer-logo"><img src="images/logo-full.png" alt="Lenora Conciergerie"></a>
-      <p class="footer-tagline">Reprenez le contrôle de votre temps. Je transforme votre bien en expérience inoubliable pour vous et vos voyageurs.</p>
+      <p class="footer-tagline">Reprenez le contrôle de votre temps. Je gère votre bien avec rigueur pour vous et pour vos voyageurs.</p>
       <div class="footer-social">
         <a href="https://www.facebook.com/share/1AVm18bdvt/?mibextid=wwXIfr" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
@@ -744,7 +727,7 @@
         <li><a href="index.html">Accueil</a></li>
         <li><a href="#about">À propos</a></li>
         <li><a href="services.html">Mes services</a></li>
-        <li><a href="#tarifs">Tarifs</a></li>
+        <li><a href="#tarifs">Tarif</a></li>
         <li><a href="#avis">Témoignages</a></li>
         <li><a href="#blog">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -780,6 +763,7 @@
       <a href="cgv.html">CGV</a>
     </div>
   </div>
+  <div class="footer-pixeloria">Créé avec ❤️ par <a href="https://pixeloria.fr" target="_blank" rel="noopener">Pixeloria</a></div>
 </footer>
 
 <script src="script.js"></script>
