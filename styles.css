@@ -588,11 +588,10 @@ h2.serif em { font-style: italic; color: var(--copper); }
 .blog-card { background: var(--cream); overflow: hidden; border-radius: 2px; transition: transform 0.3s, box-shadow 0.3s; }
 .blog-card:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,0.08); }
 .blog-thumb {
-  height: 180px; background: linear-gradient(135deg, #4A3526, #3B2C22);
-  display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 8px;
-  color: rgba(255,255,255,0.2); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+  height: 180px; background: linear-gradient(135deg, #3D4F3A, #283828);
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
 }
-.blog-thumb svg { opacity: 0.22; }
+.blog-thumb .blog-illus { width: 100%; height: 100%; }
 .blog-card-body { padding: 28px 32px 20px; }
 .blog-tag {
   display: inline-block; font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase;
