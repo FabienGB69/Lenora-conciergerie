@@ -1,0 +1,10 @@
+# agentmemory runtime data
+data/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
