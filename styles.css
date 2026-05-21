@@ -1,15 +1,19 @@
 /* ─── VARIABLES & RESET ─────────────────────── */
 :root {
   --forest: #3B2C22;
-  --lys: #C4AD8E;
+  --lys: #D5C8B5;
   --copper: #B8865C;
   --copper-light: #D4A679;
-  --cream: #F9F5EE;
-  --warm-white: #FDFAF5;
-  --beige: #EDE5D8;
-  --charcoal: #1C1C1A;
-  --mid: #6B6155;
+  --cream: #FFF9F9;
+  --warm-white: #FFF9F9;
+  --beige: #D5C8B5;
+  --charcoal: #040102;
+  --mid: #5B5852;
   --light-text: #9C917F;
+  --lenora-bg: #FFF9F9;
+  --lenora-beige: #D5C8B5;
+  --lenora-black: #040102;
+  --lenora-charcoal: #5B5852;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -168,7 +172,7 @@ nav.scrolled .nav-hamburger span { background: var(--forest); }
 }
 .hero-bg::after {
   content: ''; position: absolute; top: -20%; right: -5%; width: 55%; height: 140%;
-  background: linear-gradient(135deg, rgba(184,134,92,0.12) 0%, transparent 60%);
+  background: linear-gradient(135deg, rgba(213,200,181,0.35) 0%, transparent 60%);
   transform: skewX(-8deg);
 }
 .hero-image-block {
@@ -259,7 +263,7 @@ nav.scrolled .nav-hamburger span { background: var(--forest); }
 }
 .page-hero::after {
   content: ''; position: absolute; top: -20%; right: -5%; width: 55%; height: 140%;
-  background: linear-gradient(135deg, rgba(184,134,92,0.12) 0%, transparent 60%);
+  background: linear-gradient(135deg, rgba(213,200,181,0.35) 0%, transparent 60%);
   transform: skewX(-8deg);
 }
 .page-hero-content { position: relative; z-index: 2; max-width: 700px; }
@@ -321,7 +325,7 @@ h2.serif em { font-style: italic; color: var(--copper); }
 .about-image-col { position: relative; }
 .about-portrait {
   aspect-ratio: 1/1; min-height: 380px; max-width: 420px;
-  border-radius: 50%; overflow: hidden; background: #C8B5A0;
+  border-radius: 50%; overflow: hidden; background: var(--beige);
   margin: 0 auto;
 }
 .about-portrait-img {
@@ -354,12 +358,12 @@ h2.serif em { font-style: italic; color: var(--copper); }
 .about-name-story p { font-family: 'Cormorant Garamond', serif; font-size: 17px; line-height: 1.75; color: var(--mid); font-style: italic; }
 .about-name-story strong { font-style: normal; color: var(--forest); }
 .about-formation {
-  background: rgba(184,134,92,0.15); border-radius: 4px; padding: 24px;
+  background: rgba(213,200,181,0.4); border-radius: 4px; padding: 24px;
   margin-top: 28px; display: flex; gap: 16px; align-items: flex-start;
   border-left: 3px solid var(--copper);
 }
 .formation-icon {
-  width: 42px; height: 42px; background: rgba(184,134,92,0.15); border-radius: 50%;
+  width: 42px; height: 42px; background: rgba(213,200,181,0.4); border-radius: 50%;
   flex-shrink: 0; display: flex; align-items: center; justify-content: center;
   color: var(--copper);
 }
@@ -383,7 +387,7 @@ h2.serif em { font-style: italic; color: var(--copper); }
   transform-origin: left; transition: transform 0.4s ease;
 }
 .service-card:hover::before { transform: scaleX(1); }
-.service-card:hover { background: #F0E9DA; }
+.service-card:hover { background: #E8E0D0; }
 .service-num {
   font-family: 'Cormorant Garamond', serif; font-size: 72px; font-weight: 300;
   color: rgba(40,56,40,0.06); line-height: 1; position: absolute; top: 16px; right: 20px;
@@ -448,7 +452,7 @@ h2.serif em { font-style: italic; color: var(--copper); }
 .zone-card {
   background: var(--cream); padding: 48px 40px; position: relative; overflow: hidden; transition: background 0.3s;
 }
-.zone-card:hover { background: #EFE8D8; }
+.zone-card:hover { background: #E8E0D0; }
 .zone-card::after {
   content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
   background: var(--copper); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease;
@@ -595,7 +599,7 @@ h2.serif em { font-style: italic; color: var(--copper); }
 .blog-card-body { padding: 28px 32px 20px; }
 .blog-tag {
   display: inline-block; font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase;
-  color: var(--copper); background: rgba(184,134,92,0.12); padding: 4px 10px;
+  color: var(--copper); background: rgba(213,200,181,0.35); padding: 4px 10px;
   border-radius: 100px; margin-bottom: 14px;
 }
 .blog-card h4 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; color: var(--forest); line-height: 1.4; margin-bottom: 12px; }
