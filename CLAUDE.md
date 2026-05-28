@@ -59,3 +59,40 @@ Branche active : `claude/code-review-GVMIm` → à merger dans `main` après val
 2. Connecter le repo GitHub à Vercel, configurer domaine `lenora-conciergerie.fr`
 3. Merger la branche `claude/code-review-GVMIm` → `main` après test Vercel
 4. Ajouter images propriétés (hero, OG images)
+
+## Historique des interventions
+
+| Date | Commit | Description |
+|------|--------|-------------|
+| 2026-05-28 | `a4eadf3` | **Corrections orthographe, grammaire et typographie FR** — 9 fichiers HTML, 21 corrections |
+| 2026-05-28 | `41099d2` | Ajout skill /humanizer — détection et réécriture wording anti-IA |
+| 2026-05-28 | `0505a0e` | Ajout skill /tier3 — orchestration agents 3 niveaux |
+| 2026-05-28 | `2a0d8d5` | Wording section À propos — ton plus naturel, moins IA |
+| 2026-05-28 | `c9d3fda` | Harmonisation palette CSS avec charte logo Lenora |
+| 2026-05-28 | `cfed7ff` | Fix affichage responsive desktop — photo hero + texte intégral |
+
+### Détail — corrections du 2026-05-28 (commit a4eadf3)
+
+**Grammaire :**
+- `index.html` : `interlocuteur` → `interlocutrice` (Leslye est une femme)
+- `ain.html` + `nord-isere.html` : `au nuitée` → `à la nuitée` (*nuitée* = nom féminin)
+- `services.html` : `avant mise en location` → `avant la mise en location`
+- `services.html` : `Mise aux normes décoration` → `Mise aux normes en décoration`
+- `blog-airbnb-vs-booking.html` : `Des tarifs identiques… est` → `constituent` (accord pluriel)
+
+**Style / répétitions :**
+- `index.html` : `votre bien bien plus` → `votre logement bien plus`
+- `ain.html` + `nord-isere.html` : `Un bien bien positionné` → `Un bien positionné`
+- `nord-isere.html` : `clientèle de loisirs weekend` → `clientèle de loisirs le week-end`
+- `blog-5-questions-conciergerie.html` : `accountability` → `responsabilité`
+- `blog-estimer-revenu-ain.html` : `nous y reviendrons` → `j'y reviendrai` (cohérence je/nous)
+
+**Encodages corrompus :**
+- `blog-estimer-revenu-ain.html` : `d??paysement` → `dépaysement`
+- `blog-airbnb-vs-booking.html` : caractères U+FFFD → tiret cadratin `—`
+
+**Typographie française :**
+- `index.html` : 4 guillemets droits `"` → guillemets typographiques `"` (témoignages)
+- `ain.html` : `"la région..."` → `«&nbsp;la région...&nbsp;»`
+- `mentions-legales.html` : `SIRET :` → `SIRET&nbsp;:` (espace insécable)
+- `cgv.html` : tagline footer harmonisée avec les autres pages
