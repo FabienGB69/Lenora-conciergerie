@@ -54,8 +54,55 @@ Branche active : `claude/code-review-GVMIm` → à merger dans `main` après val
 - Toujours lancer des agents (Agent tool) et sous-agents pour exécuter les tâches — paralléliser au maximum
 - Utiliser `/compact` (skill) pour comprimer le contexte quand les tokens montent
 
+## Leçons apprises (erreurs à ne pas répéter)
+
+| Erreur observée | Cause | Règle à suivre |
+|---|---|---|
+| Agent Haiku/Opus bloqué par "session limit" | Quota de tokens épuisé sur ces modèles | **Utiliser `model: "sonnet"` pour tous les sous-agents** |
+| Agent batch A s'est emmêlé et a demandé des clarifications au lieu d'agir | Prompt trop ambigu | Toujours commencer le prompt d'un agent par le verbe d'action ("Lis", "Corrige", "Applique") + fichiers cibles explicites |
+| Corrections déjà appliquées dans une session précédente (risque de doublon) | L'historique git n'était pas consulté | Avant toute correction, vérifier `git log --oneline -5` pour éviter de refaire ce qui est déjà commité |
+| Caractères corrompus U+FFFD non modifiables par Edit texte | Bytes invalides dans le fichier source | Utiliser un script Python (mode binaire) pour remplacer `\xef\xbf\xbd` par le caractère voulu |
+| `npx claude-smart install` exécuté sans vérification | Package tiers inconnu | **Ne jamais exécuter de package npm non officiel** sans vérifier sa source — risque supply chain |
+
 ## Actions restantes côté Leslye (client)
 1. Créer compte Formspree → coller l'ID dans `action="https://formspree.io/f/ID"` (toutes les pages avec formulaire)
 2. Connecter le repo GitHub à Vercel, configurer domaine `lenora-conciergerie.fr`
 3. Merger la branche `claude/code-review-GVMIm` → `main` après test Vercel
 4. Ajouter images propriétés (hero, OG images)
+
+## Historique des interventions
+
+| Date | Commit | Description |
+|------|--------|-------------|
+| 2026-05-28 | `a4eadf3` | **Corrections orthographe, grammaire et typographie FR** — 9 fichiers HTML, 21 corrections |
+| 2026-05-28 | `41099d2` | Ajout skill /humanizer — détection et réécriture wording anti-IA |
+| 2026-05-28 | `0505a0e` | Ajout skill /tier3 — orchestration agents 3 niveaux |
+| 2026-05-28 | `2a0d8d5` | Wording section À propos — ton plus naturel, moins IA |
+| 2026-05-28 | `c9d3fda` | Harmonisation palette CSS avec charte logo Lenora |
+| 2026-05-28 | `cfed7ff` | Fix affichage responsive desktop — photo hero + texte intégral |
+
+### Détail — corrections du 2026-05-28 (commit a4eadf3)
+
+**Grammaire :**
+- `index.html` : `interlocuteur` → `interlocutrice` (Leslye est une femme)
+- `ain.html` + `nord-isere.html` : `au nuitée` → `à la nuitée` (*nuitée* = nom féminin)
+- `services.html` : `avant mise en location` → `avant la mise en location`
+- `services.html` : `Mise aux normes décoration` → `Mise aux normes en décoration`
+- `blog-airbnb-vs-booking.html` : `Des tarifs identiques… est` → `constituent` (accord pluriel)
+
+**Style / répétitions :**
+- `index.html` : `votre bien bien plus` → `votre logement bien plus`
+- `ain.html` + `nord-isere.html` : `Un bien bien positionné` → `Un bien positionné`
+- `nord-isere.html` : `clientèle de loisirs weekend` → `clientèle de loisirs le week-end`
+- `blog-5-questions-conciergerie.html` : `accountability` → `responsabilité`
+- `blog-estimer-revenu-ain.html` : `nous y reviendrons` → `j'y reviendrai` (cohérence je/nous)
+
+**Encodages corrompus :**
+- `blog-estimer-revenu-ain.html` : `d??paysement` → `dépaysement`
+- `blog-airbnb-vs-booking.html` : caractères U+FFFD → tiret cadratin `—`
+
+**Typographie française :**
+- `index.html` : 4 guillemets droits `"` → guillemets typographiques `"` (témoignages)
+- `ain.html` : `"la région..."` → `«&nbsp;la région...&nbsp;»`
+- `mentions-legales.html` : `SIRET :` → `SIRET&nbsp;:` (espace insécable)
+- `cgv.html` : tagline footer harmonisée avec les autres pages
