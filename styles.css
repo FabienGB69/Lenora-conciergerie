@@ -177,7 +177,7 @@ nav.scrolled .nav-hamburger span { background: var(--forest); }
 }
 .hero-bg::after {
   content: ''; position: absolute; top: -20%; right: -5%; width: 55%; height: 140%;
-  background: linear-gradient(135deg, rgba(213,200,181,0.35) 0%, transparent 60%);
+  background: linear-gradient(135deg, rgba(213,203,178,0.35) 0%, transparent 60%);
   transform: skewX(-8deg);
 }
 .hero-image-block {
@@ -185,7 +185,7 @@ nav.scrolled .nav-hamburger span { background: var(--forest); }
 }
 .hero-image-block::before {
   content: ''; position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(to right, rgba(40,56,40,0.75) 0%, transparent 45%),
+  background: linear-gradient(to right, rgba(60,32,18,0.75) 0%, transparent 45%),
               linear-gradient(to top, rgba(40,27,16,0.5) 0%, transparent 35%);
 }
 .hero-property-img {
@@ -268,7 +268,7 @@ nav.scrolled .nav-hamburger span { background: var(--forest); }
 }
 .page-hero::after {
   content: ''; position: absolute; top: -20%; right: -5%; width: 55%; height: 140%;
-  background: linear-gradient(135deg, rgba(213,200,181,0.35) 0%, transparent 60%);
+  background: linear-gradient(135deg, rgba(213,203,178,0.35) 0%, transparent 60%);
   transform: skewX(-8deg);
 }
 .page-hero-content { position: relative; z-index: 2; max-width: 700px; }
@@ -368,7 +368,7 @@ h2.serif em { font-style: italic; color: var(--copper); }
   border-left: 3px solid var(--copper);
 }
 .formation-icon {
-  width: 42px; height: 42px; background: rgba(213,200,181,0.4); border-radius: 50%;
+  width: 42px; height: 42px; background: rgba(213,203,178,0.4); border-radius: 50%;
   flex-shrink: 0; display: flex; align-items: center; justify-content: center;
   color: var(--copper);
 }
@@ -395,7 +395,7 @@ h2.serif em { font-style: italic; color: var(--copper); }
 .service-card:hover { background: #E3D9CB; }
 .service-num {
   font-family: 'Cormorant Garamond', serif; font-size: 72px; font-weight: 300;
-  color: rgba(40,56,40,0.06); line-height: 1; position: absolute; top: 16px; right: 20px;
+  color: rgba(60,32,18,0.06); line-height: 1; position: absolute; top: 16px; right: 20px;
 }
 .service-icon {
   width: 48px; height: 48px; background: var(--forest); border-radius: 50%;
@@ -465,7 +465,7 @@ h2.serif em { font-style: italic; color: var(--copper); }
 .zone-card:hover::after { transform: scaleX(1); }
 .zone-dept {
   font-family: 'Cormorant Garamond', serif; font-size: 64px; font-weight: 300;
-  color: rgba(40,56,40,0.06); position: absolute; top: 12px; right: 24px; line-height: 1;
+  color: rgba(60,32,18,0.06); position: absolute; top: 12px; right: 24px; line-height: 1;
 }
 .zone-icon {
   width: 44px; height: 44px; background: var(--forest); border-radius: 50%;
@@ -597,14 +597,14 @@ h2.serif em { font-style: italic; color: var(--copper); }
 .blog-card { background: var(--cream); overflow: hidden; border-radius: 2px; transition: transform 0.3s, box-shadow 0.3s; }
 .blog-card:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,0.08); }
 .blog-thumb {
-  height: 180px; background: linear-gradient(135deg, #3D4F3A, #283828);
+  height: 180px; background: linear-gradient(135deg, #5A3D28, #3D2818);
   display: flex; align-items: center; justify-content: center; overflow: hidden;
 }
 .blog-thumb .blog-illus { width: 100%; height: 100%; }
 .blog-card-body { padding: 28px 32px 20px; }
 .blog-tag {
   display: inline-block; font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase;
-  color: var(--copper); background: rgba(213,200,181,0.35); padding: 4px 10px;
+  color: var(--copper); background: rgba(213,203,178,0.35); padding: 4px 10px;
   border-radius: 100px; margin-bottom: 14px;
 }
 .blog-card h4 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; color: var(--forest); line-height: 1.4; margin-bottom: 12px; }
