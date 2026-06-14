@@ -38,7 +38,12 @@ nav.scrolled {
 }
 .nav-logo { display: flex; align-items: center; text-decoration: none; }
 .nav-logo img {
-  height: 62px; width: auto;
+  height: 44px; width: auto;
+  filter: brightness(0) invert(1);
+  transition: filter 0.4s;
+}
+nav.scrolled .nav-logo img {
+  filter: none;
 }
 .nav-logo-tagline {
   display: block;
