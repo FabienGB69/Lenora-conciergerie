@@ -686,9 +686,10 @@ h2.serif em { font-style: italic; color: var(--copper); }
 .btn-form:disabled { opacity: 0.65; cursor: not-allowed; transform: none; }
 .contact-inner .btn-form {
   background: var(--lenora-black);
+  color: var(--lenora-bg);
   border: 1px solid var(--lenora-black);
 }
-.contact-inner .btn-form:hover { background: var(--lenora-charcoal); }
+.contact-inner .btn-form:hover { background: var(--lenora-charcoal); border-color: var(--lenora-charcoal); }
 
 /* ─── FOOTER ─────────────────────────────────── */
 footer { background: var(--forest); padding: 64px 60px 32px; }
