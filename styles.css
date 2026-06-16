@@ -692,41 +692,41 @@ h2.serif em { font-style: italic; color: var(--copper); }
 .contact-inner .btn-form:hover { background: var(--lenora-charcoal); border-color: var(--lenora-charcoal); }
 
 /* ─── FOOTER ─────────────────────────────────── */
-footer { background: var(--forest); padding: 64px 60px 32px; }
+footer { background: var(--lenora-beige); color: var(--lenora-black); padding: 64px 60px 32px; }
 .footer-top {
   display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 60px;
-  padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.07); margin-bottom: 32px;
+  padding-bottom: 48px; border-bottom: 1px solid rgba(4,1,2,0.1); margin-bottom: 32px;
 }
 .footer-logo { display: block; margin-bottom: 14px; text-decoration: none; }
-.footer-logo img { height: 80px; width: auto; filter: brightness(0) invert(1); }
-.footer-tagline { font-size: 13px; color: rgba(255,255,255,0.3); line-height: 1.7; font-weight: 300; max-width: 240px; }
+.footer-logo img { height: 80px; width: auto; filter: none; }
+.footer-tagline { font-size: 13px; color: var(--mid); line-height: 1.7; font-weight: 300; max-width: 240px; }
 .footer-social { display: flex; gap: 10px; margin-top: 28px; }
 .social-link {
-  width: 36px; height: 36px; border: 1px solid rgba(255,255,255,0.1); border-radius: 50%;
+  width: 36px; height: 36px; border: 1px solid rgba(91,88,82,0.25); border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  color: rgba(255,255,255,0.35); text-decoration: none; font-size: 12px;
+  color: var(--mid); text-decoration: none; font-size: 12px;
   transition: all 0.3s;
 }
 .social-link:hover { border-color: var(--copper); color: var(--copper); }
-.footer-col h4 { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.25); margin-bottom: 20px; }
+.footer-col h4 { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--light-text); margin-bottom: 20px; }
 .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-.footer-links a { font-size: 13.5px; color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.3s; font-weight: 300; }
-.footer-links a:hover { color: var(--copper-light); }
+.footer-links a { font-size: 13.5px; color: var(--mid); text-decoration: none; transition: color 0.3s; font-weight: 300; }
+.footer-links a:hover { color: var(--copper); }
 .footer-contact { display: flex; flex-direction: column; gap: 12px; }
-.footer-contact-item { font-size: 13px; color: rgba(255,255,255,0.45); font-weight: 300; }
-.footer-contact-item strong { color: rgba(255,255,255,0.6); display: block; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 3px; }
-.footer-contact-item a { color: rgba(255,255,255,0.45); text-decoration: none; }
-.footer-contact-item a:hover { color: var(--copper-light); }
-.footer-bottom { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: rgba(255,255,255,0.18); }
+.footer-contact-item { font-size: 13px; color: var(--mid); font-weight: 300; }
+.footer-contact-item strong { color: var(--charcoal); display: block; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 3px; }
+.footer-contact-item a { color: var(--mid); text-decoration: none; }
+.footer-contact-item a:hover { color: var(--copper); }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--light-text); }
 .footer-legal { display: flex; gap: 24px; }
-.footer-legal a { color: rgba(255,255,255,0.18); text-decoration: none; transition: color 0.3s; }
-.footer-legal a:hover { color: rgba(255,255,255,0.45); }
+.footer-legal a { color: var(--light-text); text-decoration: none; transition: color 0.3s; }
+.footer-legal a:hover { color: var(--mid); }
 .footer-pixeloria {
-  text-align: center; font-size: 11px; color: rgba(255,255,255,0.12);
+  text-align: center; font-size: 11px; color: var(--light-text);
   margin-top: 20px; letter-spacing: 0.05em;
 }
-.footer-pixeloria a { color: rgba(255,255,255,0.2); text-decoration: none; transition: color 0.3s; }
-.footer-pixeloria a:hover { color: rgba(255,255,255,0.45); }
+.footer-pixeloria a { color: var(--mid); text-decoration: none; transition: color 0.3s; }
+.footer-pixeloria a:hover { color: var(--forest); }
 /* ═══════════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════════ */
