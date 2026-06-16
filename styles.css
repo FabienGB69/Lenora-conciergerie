@@ -310,12 +310,12 @@ nav.scrolled .nav-hamburger span { background: var(--lenora-black); }
 }
 .form-success p { margin: 0; color: inherit; line-height: 1.6; }
 /* ─── STATS STRIP ───────────────────────────── */
-.stats-strip { background: var(--lenora-black); display: grid; grid-template-columns: repeat(3,1fr); }
+.stats-strip { background: var(--lenora-beige); display: grid; grid-template-columns: repeat(3,1fr); }
 .stat-item {
-  padding: 40px 52px; border-right: 1px solid rgba(255,255,255,0.07);
+  padding: 40px 52px; border-right: 1px solid rgba(91,88,82,0.18);
   position: relative; overflow: hidden; transition: background 0.3s;
 }
-.stat-item:hover { background: rgba(255,255,255,0.03); }
+.stat-item:hover { background: rgba(4,1,2,0.04); }
 .stat-item::after {
   content: ''; position: absolute; bottom: 0; left: 52px;
   width: 0; height: 2px; background: var(--copper); transition: width 0.5s ease;
@@ -323,10 +323,10 @@ nav.scrolled .nav-hamburger span { background: var(--lenora-black); }
 .stat-item:hover::after { width: 40px; }
 .stat-num {
   font-family: 'Cormorant Garamond', serif; font-size: 52px; font-weight: 300;
-  color: var(--warm-white); line-height: 1; letter-spacing: -0.02em;
+  color: var(--lenora-black); line-height: 1; letter-spacing: -0.02em;
 }
 .stat-num sup { color: var(--copper); font-size: 26px; vertical-align: super; }
-.stat-label { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-top: 6px; }
+.stat-label { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--lenora-charcoal); margin-top: 6px; }
 
 /* ─── SECTION COMMONS ───────────────────────── */
 section { padding: 100px 60px; }
@@ -833,7 +833,7 @@ footer { background: var(--lenora-beige); color: var(--lenora-black); padding: 6
   .hero-eyebrow { font-size: 10px; }
 
   .stats-strip { grid-template-columns: 1fr; }
-  .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); padding: 24px 28px; }
+  .stat-item { border-right: none; border-bottom: 1px solid rgba(91,88,82,0.18); padding: 24px 28px; }
 
   .about { grid-template-columns: 1fr; gap: 48px; padding: 60px 24px; }
   .about-image-col { max-width: 380px; margin: 0 auto; width: 100%; }
