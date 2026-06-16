@@ -7,7 +7,7 @@
   --cream: #FFF9F9;
   --warm-white: #FFF9F9;
   --beige: #D4C8B5;
-  --charcoal: #040102;
+  --charcoal: #181210;
   --mid: #5B5852;
   --light-text: #9C917F;
   --lenora-bg: #FFF9F9;
@@ -15,7 +15,7 @@
   --lenora-light: #EBE5DD;
   --lenora-taupe: #A49F99;
   --lenora-accent: #736F6A;
-  --lenora-black: #040102;
+  --lenora-black: #181210;
   --lenora-charcoal: #5B5852;
 }
 
@@ -172,7 +172,7 @@ nav.scrolled .nav-hamburger span { background: var(--forest); }
 }
 .hero-bg {
   position: absolute; inset: 0;
-  background: linear-gradient(160deg, #6B4E35 0%, #4A3220 50%, #5A3D28 100%);
+  background: linear-gradient(160deg, #6B4E35 0%, var(--forest) 50%, #3D2818 100%);
 }
 .hero-bg::before {
   content: ''; position: absolute; inset: 0;
@@ -262,7 +262,7 @@ nav.scrolled .nav-hamburger span { background: var(--forest); }
 /* ─── PAGE HERO (inner pages) ───────────────── */
 .page-hero {
   position: relative;
-  background: linear-gradient(160deg, #6B4E35 0%, #4A3220 50%, #5A3D28 100%);
+  background: linear-gradient(160deg, #6B4E35 0%, var(--forest) 50%, #3D2818 100%);
   padding: 160px 60px 80px; overflow: hidden;
 }
 .page-hero::before {
@@ -619,7 +619,7 @@ h2.serif em { font-style: italic; color: var(--copper); }
 /* ─── CONTACT ────────────────────────────────── */
 .contact-section { background: var(--cream); padding: 0 60px 100px; }
 .contact-inner {
-  background: linear-gradient(135deg, var(--forest) 0%, #2E1D0E 100%);
+  background: linear-gradient(135deg, var(--forest) 0%, #2A1A0C 100%);
   border-radius: 4px; padding: 80px;
   display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
   position: relative; overflow: hidden;
@@ -666,7 +666,7 @@ h2.serif em { font-style: italic; color: var(--copper); }
 .btn-form:disabled { opacity: 0.65; cursor: not-allowed; transform: none; }
 
 /* ─── FOOTER ─────────────────────────────────── */
-footer { background: var(--charcoal); padding: 64px 60px 32px; }
+footer { background: var(--forest); padding: 64px 60px 32px; }
 .footer-top {
   display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 60px;
   padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.07); margin-bottom: 32px;
