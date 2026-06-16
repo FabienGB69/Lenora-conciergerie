@@ -11,7 +11,7 @@
   --mid: #5B5852;
   --light-text: #9C917F;
   --lenora-bg: #FFF9F9;
-  --lenora-beige: #D4C8B5;
+  --lenora-beige: #D5C8B5;
   --lenora-light: #EBE5DD;
   --lenora-taupe: #A49F99;
   --lenora-accent: #736F6A;
@@ -542,7 +542,7 @@ h2.serif em { font-style: italic; color: var(--copper); }
 }
 .tarif-offer-from {
   font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
-  color: var(--light-text); font-family: 'DM Sans', sans-serif;
+  color: var(--mid); font-family: 'DM Sans', sans-serif;
 }
 .tarif-offer-number {
   font-family: 'Cormorant Garamond', serif;
@@ -600,7 +600,7 @@ h2.serif em { font-style: italic; color: var(--copper); }
 .tarif-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
 .tarif-list li { font-size: 13px; color: var(--mid); display: flex; align-items: flex-start; gap: 10px; line-height: 1.5; font-weight: 300; }
 .tarif-list li::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background: var(--copper); flex-shrink: 0; margin-top: 7px; }
-.tarifs-note { text-align: center; font-family: 'Cormorant Garamond', serif; font-size: 17px; font-style: italic; color: var(--light-text); line-height: 1.8; }
+.tarifs-note { text-align: center; font-family: 'Cormorant Garamond', serif; font-size: 17px; font-style: italic; color: var(--mid); line-height: 1.8; }
 .tarifs .btn-primary {
   background: var(--lenora-black);
   color: var(--lenora-bg);
@@ -818,6 +818,9 @@ footer { background: var(--lenora-beige); color: var(--lenora-black); padding: 6
   nav { top: 0; padding: 16px 24px; }
   nav.scrolled { padding: 12px 24px; }
   .nav-phone { display: none; }
+  .nav-logo img { filter: none; }
+  .nav-logo-tagline { color: var(--mid); opacity: 1; }
+  .nav-hamburger span { background: #040102; }
 
   .hero { height: 100svh; min-height: 580px; }
   .hero-image-block { display: none; }
