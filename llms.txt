@@ -1,0 +1,35 @@
+# Lenora Conciergerie
+
+> Conciergerie locative spécialisée dans la gestion de locations saisonnières (Airbnb, Booking) dans l'Ain, le Nord Isère et l'Est Lyonnais. Fondée par Leslye Consel.
+
+## Informations clés
+
+- Nom : Lenora Conciergerie
+- Fondatrice / interlocutrice : Leslye Consel
+- Zone d'intervention : Ain (01), Nord Isère (38), Est Lyonnais (69)
+- Téléphone : +33 6 74 39 87 41
+- Email : contact@lenora-conciergerie.fr
+- SIRET : 79348974100025
+- Site : https://lenora-conciergerie.fr
+
+## Services
+
+- Gestion complète de location courte durée (annonce, accueil voyageurs, ménage, maintenance)
+- Mise en service et optimisation d'annonce avant mise en location
+- Audit gratuit du potentiel locatif
+
+## Pages
+
+- [Accueil](https://lenora-conciergerie.fr/) : présentation, services, tarifs, témoignages
+- [Services](https://lenora-conciergerie.fr/services) : détail des prestations
+- [Méthode](https://lenora-conciergerie.fr/methode) : déroulé de l'accompagnement, étape par étape
+- [Ain](https://lenora-conciergerie.fr/ain) : conciergerie locative dans l'Ain
+- [Nord Isère](https://lenora-conciergerie.fr/nord-isere) : conciergerie locative en Nord Isère
+- [Est Lyonnais](https://lenora-conciergerie.fr/est-lyonnais) : conciergerie locative dans l'Est Lyonnais
+- [Contact](https://lenora-conciergerie.fr/contact) : demande d'audit gratuit
+
+## Blog
+
+- [Comment estimer le revenu de sa location saisonnière dans l'Ain](https://lenora-conciergerie.fr/blog-estimer-revenu-ain)
+- [Airbnb vs Booking : quelle plateforme pour votre logement à Lyon Est ?](https://lenora-conciergerie.fr/blog-airbnb-vs-booking)
+- [5 questions à poser à une conciergerie avant de lui confier votre bien](https://lenora-conciergerie.fr/blog-5-questions-conciergerie)
