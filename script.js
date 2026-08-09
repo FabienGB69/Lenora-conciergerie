@@ -87,6 +87,11 @@ if (form) {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
     const submitBtn = form.querySelector('[type="submit"]');
     const originalHTML = submitBtn.innerHTML;
 
