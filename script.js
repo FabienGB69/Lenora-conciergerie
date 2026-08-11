@@ -113,6 +113,7 @@ if (form) {
           formSuccess.setAttribute('tabindex', '-1');
           formSuccess.focus();
         }
+        if (window.va) window.va('event', { name: 'form_submit' });
       } else {
         const data = await response.json().catch(() => ({}));
         throw new Error(data.error || 'Erreur serveur');
@@ -121,9 +122,24 @@ if (form) {
       submitBtn.innerHTML = originalHTML;
       submitBtn.disabled = false;
       submitBtn.style.opacity = '';
+      if (window.va) window.va('event', { name: 'form_submit_error' });
       alert(
         "Une erreur est survenue lors de l'envoi. Merci de réessayer ou de nous contacter directement au 06 74 39 87 41."
       );
     }
   });
 }
+
+/* ── Suivi des CTA (WhatsApp, appel, boutons principaux) ──── */
+document.addEventListener('click', (e) => {
+  if (!window.va) return;
+  const link = e.target.closest('a');
+  if (!link) return;
+  if (link.classList.contains('whatsapp-float')) {
+    window.va('event', { name: 'cta_whatsapp_click' });
+  } else if (link.href && link.href.startsWith('tel:')) {
+    window.va('event', { name: 'cta_phone_click' });
+  } else if (link.classList.contains('btn-primary')) {
+    window.va('event', { name: 'cta_primary_click' });
+  }
+});
