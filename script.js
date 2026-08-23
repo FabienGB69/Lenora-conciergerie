@@ -139,6 +139,8 @@ document.addEventListener('click', (e) => {
     window.va('event', { name: 'cta_whatsapp_click' });
   } else if (link.href && link.href.startsWith('tel:')) {
     window.va('event', { name: 'cta_phone_click' });
+  } else if (link.classList.contains('nav-cta') || link.classList.contains('nav-mobile-cta')) {
+    window.va('event', { name: 'cta_nav_audit_click' });
   } else if (link.classList.contains('btn-primary')) {
     window.va('event', { name: 'cta_primary_click' });
   }

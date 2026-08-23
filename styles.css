@@ -878,6 +878,7 @@ footer { background: var(--lenora-beige); color: var(--lenora-black); padding: 6
   .contact-section { padding: 0 24px 60px; }
   .contact-inner { grid-template-columns: 1fr; gap: 48px; padding: 40px 28px; border-radius: 2px; }
   .form-row { grid-template-columns: 1fr; gap: 0; }
+  .form-input { font-size: 16px; }
 
   footer { padding: 48px 24px 24px; }
   .footer-top { grid-template-columns: 1fr; gap: 36px; }
