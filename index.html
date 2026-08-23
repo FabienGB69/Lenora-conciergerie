@@ -37,6 +37,7 @@
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Jujurieux",
+      "postalCode": "01640",
       "addressRegion": "Ain",
       "addressCountry": "FR"
     },
@@ -45,8 +46,9 @@
       { "@type": "AdministrativeArea", "name": "Nord Isère" },
       { "@type": "AdministrativeArea", "name": "Est Lyonnais" }
     ],
+    "openingHours": "Mo-Su 00:00-23:59",
     "serviceType": "Conciergerie location saisonnière",
-    "founder": { "@type": "Person", "name": "Leslye" },
+    "founder": { "@type": "Person", "name": "Leslye Consel" },
     "sameAs": [
       "https://www.facebook.com/share/1AVm18bdvt/?mibextid=wwXIfr",
       "https://www.instagram.com/lenora.conciergerie/",
@@ -58,21 +60,21 @@
 <body>
 
 <nav id="mainNav">
-  <a href="index.html" class="nav-logo">
+  <a href="/" class="nav-logo">
     <img src="images/logo-full.png" alt="Lenora Conciergerie">
     <span class="nav-logo-tagline">Conciergerie locative</span>
   </a>
   <ul class="nav-links">
-    <li><a href="index.html" class="active">Accueil</a></li>
+    <li><a href="/" class="active">Accueil</a></li>
     <li><a href="#about">À propos</a></li>
     <li>
-      <a href="services.html">Mes services <span class="nav-arrow">&#9662;</span></a>
+      <a href="/services">Mes services <span class="nav-arrow">&#9662;</span></a>
       <div class="nav-dropdown">
         <div class="drop-section">Prestations</div>
-        <a href="services.html">Gestion complète</a>
-        <a href="services.html#mise-en-service">Mise en service</a>
-        <a href="services.html">Optimisation d'annonce</a>
-        <a href="methode.html">Comment ça marche</a>
+        <a href="/services">Gestion complète</a>
+        <a href="/services#mise-en-service">Mise en service</a>
+        <a href="/services">Optimisation d'annonce</a>
+        <a href="/methode">Comment ça marche</a>
         <div class="drop-sep"></div>
         <a href="#tarifs">Voir les tarifs &rarr;</a>
       </div>
@@ -81,15 +83,15 @@
       <a href="#zones">Zones <span class="nav-arrow">&#9662;</span></a>
       <div class="nav-dropdown">
         <div class="drop-section">Pages locales SEO</div>
-        <a href="ain.html">Conciergerie dans l'Ain</a>
-        <a href="nord-isere.html">Conciergerie Nord Isère</a>
-        <a href="est-lyonnais.html">Conciergerie Est Lyonnais</a>
+        <a href="/ain">Conciergerie dans l'Ain</a>
+        <a href="/nord-isere">Conciergerie Nord Isère</a>
+        <a href="/est-lyonnais">Conciergerie Est Lyonnais</a>
       </div>
     </li>
     <li><a href="#tarifs">Tarif</a></li>
     <li><a href="#blog">Blog</a></li>
     <li><a href="tel:+33674398741" class="nav-phone"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>06 74 39 87 41</a></li>
-    <li><a href="contact.html" class="nav-cta">Audit gratuit</a></li>
+    <li><a href="/contact" class="nav-cta">Audit gratuit</a></li>
   </ul>
   <button class="nav-hamburger" id="navHamburger" aria-label="Ouvrir le menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -98,17 +100,17 @@
 
 <div class="nav-mobile-overlay" id="mobileOverlay">
   <ul class="nav-mobile-links">
-    <li><a href="index.html" onclick="closeMobile()">Accueil</a></li>
+    <li><a href="/" onclick="closeMobile()">Accueil</a></li>
     <li><a href="#about" onclick="closeMobile()">À propos</a></li>
     <li>
-      <a href="services.html" onclick="toggleMobileSub(event,'sub-services')">
+      <a href="/services" onclick="toggleMobileSub(event,'sub-services')">
         Mes services <span class="mobile-chevron" id="chev-services">&#9662;</span>
       </a>
       <div class="mobile-sub" id="sub-services">
-        <a href="services.html" onclick="closeMobile()">Gestion complète</a>
-        <a href="services.html#mise-en-service" onclick="closeMobile()">Mise en service</a>
-        <a href="services.html" onclick="closeMobile()">Optimisation d'annonce</a>
-        <a href="methode.html" onclick="closeMobile()">Comment ça marche</a>
+        <a href="/services" onclick="closeMobile()">Gestion complète</a>
+        <a href="/services#mise-en-service" onclick="closeMobile()">Mise en service</a>
+        <a href="/services" onclick="closeMobile()">Optimisation d'annonce</a>
+        <a href="/methode" onclick="closeMobile()">Comment ça marche</a>
         <a href="#tarifs" onclick="closeMobile()">Voir les tarifs</a>
       </div>
     </li>
@@ -117,15 +119,15 @@
         Zones <span class="mobile-chevron" id="chev-zones">&#9662;</span>
       </a>
       <div class="mobile-sub" id="sub-zones">
-        <a href="ain.html" onclick="closeMobile()">Conciergerie dans l'Ain</a>
-        <a href="nord-isere.html" onclick="closeMobile()">Conciergerie Nord Isère</a>
-        <a href="est-lyonnais.html" onclick="closeMobile()">Conciergerie Est Lyonnais</a>
+        <a href="/ain" onclick="closeMobile()">Conciergerie dans l'Ain</a>
+        <a href="/nord-isere" onclick="closeMobile()">Conciergerie Nord Isère</a>
+        <a href="/est-lyonnais" onclick="closeMobile()">Conciergerie Est Lyonnais</a>
       </div>
     </li>
     <li><a href="#tarifs" onclick="closeMobile()">Tarif</a></li>
     <li><a href="#blog" onclick="closeMobile()">Blog</a></li>
   </ul>
-  <a href="contact.html" class="nav-mobile-cta" onclick="closeMobile()">
+  <a href="/contact" class="nav-mobile-cta" onclick="closeMobile()">
     Audit gratuit
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
   </a>
@@ -140,7 +142,7 @@
     <h1>Faites de votre bien<br>une <em>source de revenus sereine.</em><br><strong>Sans sacrifier votre temps</strong><br>ou votre charge mentale.</h1>
     <p class="hero-sub">Je prends en charge votre location saisonnière — annonce, réservations, accueil des voyageurs, ménage, maintenance. Vous percevez vos revenus locatifs, libéré des contraintes du quotidien.</p>
     <div class="hero-actions">
-      <a href="contact.html" class="btn-primary">
+      <a href="/contact" class="btn-primary">
         Demander mon audit gratuit
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -337,7 +339,7 @@
         <span class="zone-city">Pérouges</span>
       </div>
       <p class="zone-seo-note">Je gère des locations saisonnières dans tout le département de l'Ain, de la Dombes aux contreforts du Jura.</p>
-      <a href="ain.html" class="zone-link">Voir la page Ain <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="/ain" class="zone-link">Voir la page Ain <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
     <div class="zone-card">
       <div class="zone-dept">38</div>
@@ -352,7 +354,7 @@
         <span class="zone-city">Crémieu</span>
       </div>
       <p class="zone-seo-note">Le Nord Isère offre un marché locatif dynamique grâce à sa proximité avec Lyon et ses axes logistiques en plein développement.</p>
-      <a href="nord-isere.html" class="zone-link">Voir la page Nord Isère <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="/nord-isere" class="zone-link">Voir la page Nord Isère <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
     <div class="zone-card">
       <div class="zone-dept">69</div>
@@ -368,7 +370,7 @@
         <span class="zone-city">Genas</span>
       </div>
       <p class="zone-seo-note">L'Est Lyonnais attire les voyageurs d'affaires et les touristes de passage grâce à la proximité de l'aéroport Saint-Exupéry.</p>
-      <a href="est-lyonnais.html" class="zone-link">Voir la page Est Lyonnais <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="/est-lyonnais" class="zone-link">Voir la page Est Lyonnais <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
   </div>
 </section>
@@ -446,7 +448,7 @@
       <p>Chaque bien étant différent, un échange personnalisé permet de définir précisément les besoins, les services adaptés et les conditions d'accompagnement.</p>
       <p>Aucun engagement avant votre accord — le tarif définitif est établi lors de l'audit gratuit, en fonction de votre bien et de vos objectifs.</p>
     </div>
-    <a href="contact.html" class="btn-primary">
+    <a href="/contact" class="btn-primary">
       Demander une estimation personnalisée
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
@@ -459,7 +461,7 @@
       <p class="section-label">Ressources &amp; Conseils</p>
       <h2 class="serif">J'écris pour vous aider<br><em>à décider en confiance</em></h2>
     </div>
-    <a href="index.html#blog" class="blog-link-all">Voir tous les articles <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="/#blog" class="blog-link-all">Voir tous les articles <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
   </div>
   <div class="blog-grid">
     <div class="blog-card">
@@ -509,7 +511,7 @@
         <h4>Comment estimer le revenu de sa location saisonnière dans l'Ain</h4>
         <p>Taux d'occupation, saisonnalité, positionnement tarifaire… J'explique comment calculer le potentiel réel de votre bien avant de vous lancer.</p>
       </div>
-      <div class="blog-card-footer"><a href="blog-estimer-revenu-ain.html" class="blog-read">Lire l'article <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+      <div class="blog-card-footer"><a href="/blog-estimer-revenu-ain" class="blog-read">Lire l'article <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
     </div>
     <div class="blog-card">
       <div class="blog-thumb" style="background:linear-gradient(135deg,#4A3828,#2C2018);">
@@ -575,7 +577,7 @@
         <h4>Airbnb vs Booking : quelle plateforme pour votre logement à Lyon Est ?</h4>
         <p>Les deux plateformes n'attirent pas le même type de voyageur. Voici comment choisir — ou combiner — pour maximiser vos réservations.</p>
       </div>
-      <div class="blog-card-footer"><a href="blog-airbnb-vs-booking.html" class="blog-read">Lire l'article <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+      <div class="blog-card-footer"><a href="/blog-airbnb-vs-booking" class="blog-read">Lire l'article <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
     </div>
     <div class="blog-card">
       <div class="blog-thumb" style="background:linear-gradient(135deg,#283840,#182028);">
@@ -635,7 +637,7 @@
         <h4>5 questions à poser à une conciergerie avant de lui confier votre bien</h4>
         <p>Les bonnes questions sur la réactivité, les garanties et la structure tarifaire — pour faire le bon choix en toute confiance.</p>
       </div>
-      <div class="blog-card-footer"><a href="blog-5-questions-conciergerie.html" class="blog-read">Lire l'article <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+      <div class="blog-card-footer"><a href="/blog-5-questions-conciergerie" class="blog-read">Lire l'article <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
     </div>
   </div>
 </section>
@@ -665,11 +667,11 @@
         <div class="form-row">
           <div class="form-group">
             <label class="form-label" for="prenom-idx">Prénom</label>
-            <input type="text" id="prenom-idx" name="prenom" class="form-input" placeholder="Marie" autocomplete="given-name" />
+            <input type="text" id="prenom-idx" name="prenom" class="form-input" placeholder="Marie" required autocomplete="given-name" />
           </div>
           <div class="form-group">
             <label class="form-label" for="nom-idx">Nom</label>
-            <input type="text" id="nom-idx" name="nom" class="form-input" placeholder="Dupont" autocomplete="family-name" />
+            <input type="text" id="nom-idx" name="nom" class="form-input" placeholder="Dupont" required autocomplete="family-name" />
           </div>
         </div>
         <div class="form-group">
@@ -692,7 +694,7 @@
         </div>
         <div class="form-group">
           <label class="form-label" for="ville-idx">Ville du bien</label>
-          <input type="text" id="ville-idx" name="ville" class="form-input" placeholder="Ex: Ambérieu-en-Bugey, Bourgoin-Jallieu..." autocomplete="address-level2" />
+          <input type="text" id="ville-idx" name="ville" class="form-input" placeholder="Ex: Ambérieu-en-Bugey, Bourgoin-Jallieu..." required autocomplete="address-level2" />
         </div>
         <div class="form-group">
           <label class="form-label" for="message-idx">Votre message</label>
@@ -710,7 +712,7 @@
 <footer>
   <div class="footer-top">
     <div>
-      <a href="index.html" class="footer-logo"><img src="images/logo-full.png" alt="Lenora Conciergerie"></a>
+      <a href="/" class="footer-logo"><img src="images/logo-full.png" alt="Lenora Conciergerie"></a>
       <p class="footer-tagline">Reprenez le contrôle de votre temps. Je gère votre bien avec rigueur pour vous et pour vos voyageurs.</p>
       <div class="footer-social">
         <a href="https://www.facebook.com/share/1AVm18bdvt/?mibextid=wwXIfr" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
@@ -727,25 +729,25 @@
     <div class="footer-col">
       <h4>Navigation</h4>
       <ul class="footer-links">
-        <li><a href="index.html">Accueil</a></li>
+        <li><a href="/">Accueil</a></li>
         <li><a href="#about">À propos</a></li>
-        <li><a href="services.html">Mes services</a></li>
+        <li><a href="/services">Mes services</a></li>
         <li><a href="#tarifs">Tarif</a></li>
         <li><a href="#avis">Témoignages</a></li>
         <li><a href="#blog">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Mes services</h4>
       <ul class="footer-links">
-        <li><a href="services.html">Gestion complète</a></li>
-        <li><a href="services.html#mise-en-service">Mise en service</a></li>
-        <li><a href="services.html">Optimisation d'annonce</a></li>
-        <li><a href="methode.html">Comment ça marche</a></li>
-        <li><a href="ain.html">Conciergerie dans l'Ain</a></li>
-        <li><a href="nord-isere.html">Conciergerie Nord Isère</a></li>
-        <li><a href="est-lyonnais.html">Conciergerie Est Lyonnais</a></li>
+        <li><a href="/services">Gestion complète</a></li>
+        <li><a href="/services#mise-en-service">Mise en service</a></li>
+        <li><a href="/services">Optimisation d'annonce</a></li>
+        <li><a href="/methode">Comment ça marche</a></li>
+        <li><a href="/ain">Conciergerie dans l'Ain</a></li>
+        <li><a href="/nord-isere">Conciergerie Nord Isère</a></li>
+        <li><a href="/est-lyonnais">Conciergerie Est Lyonnais</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -761,9 +763,9 @@
   <div class="footer-bottom">
     <span>© <span id="year"></span> Lenora Conciergerie — Tous droits réservés</span>
     <div class="footer-legal">
-      <a href="mentions-legales.html">Mentions légales</a>
-      <a href="confidentialite.html">Confidentialité</a>
-      <a href="cgv.html">CGV</a>
+      <a href="/mentions-legales">Mentions légales</a>
+      <a href="/confidentialite">Confidentialité</a>
+      <a href="/cgv">CGV</a>
     </div>
   </div>
   <div class="footer-pixeloria">Créé avec ❤️ par <a href="https://pixeloria.fr" target="_blank" rel="noopener">Pixeloria</a></div>
