@@ -4,6 +4,7 @@
   --lys: #D4C8B5;
   --copper: #B8865C;
   --copper-deep: #8A5F38;
+  --copper-btn: #9C6C44;
   --copper-light: #D4A679;
   --cream: #FFF9F9;
   --warm-white: #FFF9F9;
@@ -107,7 +108,7 @@ nav.scrolled .nav-links > li > a { color: var(--mid); }
 .nav-dropdown .drop-sep { height: 1px; background: var(--beige); margin: 4px 0; }
 
 .nav-cta {
-  background: var(--copper) !important; color: #fff !important;
+  background: var(--copper-btn) !important; color: #fff !important;
   padding: 10px 22px !important; border-radius: 2px !important;
   font-size: 12px !important; letter-spacing: 0.1em !important;
   text-transform: uppercase !important; transition: background 0.3s !important;
@@ -161,7 +162,7 @@ nav.scrolled .nav-hamburger span { background: var(--lenora-black); }
 .nav-mobile-links .mobile-sub a:hover { color: var(--copper-light); }
 .nav-mobile-cta {
   display: inline-flex; align-items: center; gap: 10px;
-  background: var(--copper); color: #fff; padding: 16px 32px;
+  background: var(--copper-btn); color: #fff; padding: 16px 32px;
   font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
   text-decoration: none; border-radius: 2px; margin-top: 40px;
   font-family: 'DM Sans', sans-serif;
@@ -232,7 +233,7 @@ nav.scrolled .nav-hamburger span { background: var(--lenora-black); }
 
 .btn-primary {
   display: inline-flex; align-items: center; gap: 10px;
-  background: var(--copper); color: #fff; padding: 16px 32px;
+  background: var(--copper-btn); color: #fff; padding: 16px 32px;
   font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
   text-decoration: none; border-radius: 3px;
   transition: background 0.3s, transform 0.2s; font-family: 'DM Sans', sans-serif;
@@ -688,7 +689,7 @@ h2.serif em { font-style: italic; color: var(--copper); }
 }
 .form-input option { background: var(--warm-white); }
 .btn-form {
-  width: 100%; background: var(--copper); color: #fff; border: none;
+  width: 100%; background: var(--copper-btn); color: #fff; border: none;
   padding: 16px; font-family: 'DM Sans', sans-serif; font-size: 12px;
   letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer;
   border-radius: 2px; margin-top: 8px;
