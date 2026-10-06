@@ -917,6 +917,7 @@ footer { background: var(--lenora-beige); color: var(--lenora-black); padding: 6
 
   .page-hero { padding: 100px 24px 48px; }
   .page-hero h1 { font-size: clamp(28px, 7vw, 44px); }
+  section[style*="60px"] { padding-left: 24px !important; padding-right: 24px !important; }
 }
 
 @media (max-width: 480px) {
@@ -961,6 +962,7 @@ footer { background: var(--lenora-beige); color: var(--lenora-black); padding: 6
   .process { padding: 48px 20px; }
   .contact-section { padding: 0 20px 48px; }
   .page-hero { padding: 80px 20px 40px; }
+  section[style*="60px"] { padding-left: 20px !important; padding-right: 20px !important; }
 }
 
 /* ── WhatsApp floating button ── */
